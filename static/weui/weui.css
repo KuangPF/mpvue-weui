@@ -691,7 +691,7 @@ input.weui-btn_plain-primary {
 }
 
 .weui-toptips {
-    display: none;
+    display: block;
     position: fixed;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
