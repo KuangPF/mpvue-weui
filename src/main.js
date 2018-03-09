@@ -12,8 +12,8 @@ export default {
   // 这个字段走 app.json
   config: {
     pages: [
-      'pages/index/index',
-      'pages/button/button'
+      'pages/button/button',
+      'pages/index/index'
     ], // Will be filled in webpack
     window: {
       backgroundTextStyle: 'light',
