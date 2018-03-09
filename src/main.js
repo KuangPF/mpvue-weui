@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import App from './App'
-
+import './css/app.css'
 Vue.config.productionTip = false
 App.mpType = 'app'
 
@@ -10,7 +10,9 @@ app.$mount()
 export default {
   // 这个字段走 app.json
   config: {
-    pages: [], // Will be filled in webpack
+    pages: [
+      'pages/index/index'
+    ], // Will be filled in webpack
     window: {
       backgroundTextStyle: 'light',
       navigationBarBackgroundColor: '#fff',

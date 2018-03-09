@@ -1,97 +1,141 @@
 <template>
-  <div class="container" @click="clickHandle('test click', $event)">
-
-    <div class="userinfo" @click="bindViewTap">
-      <img class="userinfo-avatar" v-if="userInfo.avatarUrl" :src="userInfo.avatarUrl" background-size="cover" />
-      <div class="userinfo-nickname">
-        <card :text="userInfo.nickName"></card>
+  <div class="page">
+    <div class="page__hd">
+      <div class="page__title">WeUI</div>
+      <div class="page__desc">WeUI 是一套同微信原生视觉体验一致的基础样式库，由微信官方设计团队为微信内网页和微信小程序量身设计，令用户的使用感知更加统一。</div>
+    </div>
+    <div class="page__bd page__bd_spacing">
+      <div class="kind-list">
+        <div v-for="item in list">
+          <div class="kind-list__item">
+            <div :id=item.id :class="{'kind-list__item-hd_show':item.open}" class="weui-flex,kind-list__item-hd"></div>
+          </div>
+        </div>
       </div>
     </div>
-
-    <div class="usermotto">
-      <div class="user-motto">
-        <card :text="motto"></card>
-      </div>
-    </div>
-      
-    <form class="form-container">
-      <input type="text" class="form-control" v-model="motto" placeholder="v-model" />
-      <input type="text" class="form-control" v-model.lazy="motto" placeholder="v-model.lazy" />
-    </form>
-
   </div>
 </template>
 
 <script>
-import card from '@/components/card'
 
 export default {
-  data () {
+  data() {
     return {
-      motto: 'Hello World',
-      userInfo: {}
+      list: [
+        {
+          id: 'form',
+          name: '表单',
+          open: true,
+          pages: ['button', 'list', 'input', 'slider', 'uploader']
+        },
+        {
+          id: 'widget',
+          name: '基础组件',
+          open: false,
+          pages: ['article', 'badge', 'flex', 'footer', 'gallery', 'grid', 'icons', 'loadmore', 'panel', 'preview', 'progress']
+        },
+        {
+          id: 'feedback',
+          name: '操作反馈',
+          open: false,
+          pages: ['actionsheet', 'dialog', 'msg', 'picker', 'toast']
+        },
+        {
+          id: 'nav',
+          name: '导航相关',
+          open: false,
+          pages: ['navbar', 'tabbar']
+        },
+        {
+          id: 'search',
+          name: '搜索相关',
+          open: false,
+          pages: ['searchbar']
+        }
+      ]
     }
   },
 
   components: {
-    card
   },
 
   methods: {
-    bindViewTap () {
-      const url = '../logs/logs'
-      wx.navigateTo({ url })
-    },
-    getUserInfo () {
-      // 调用登录接口
-      wx.login({
-        success: () => {
-          wx.getUserInfo({
-            success: (res) => {
-              this.userInfo = res.userInfo
-            }
-          })
-        }
-      })
-    },
-    clickHandle (msg, ev) {
-      console.log('clickHandle:', msg, ev)
-    }
   },
 
-  created () {
-    // 调用应用实例的方法获取全局数据
-    this.getUserInfo()
+  created() {
   }
 }
 </script>
 
 <style scoped>
-.userinfo {
-  display: flex;
-  flex-direction: column;
+/*!
+ * WeUI v1.1.1 (https://github.com/weui/weui-wxss)
+ * Copyright 2017 Tencent, Inc.
+ * Licensed under the MIT license
+ */
+
+.weui-flex {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
   align-items: center;
 }
 
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+.weui-cells {
+  margin-top: 0;
+  opacity: 0;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
-.userinfo-nickname {
-  color: #aaa;
+.weui-cells:after,
+.weui-cells:before {
+  display: none;
 }
 
-.usermotto {
-  margin-top: 150px;
+.weui-cells_show {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
 }
 
-.form-control {
-  display: block;
-  padding: 0 12px;
-  margin-bottom: 5px;
-  border: 1px solid #ccc;
+.weui-cell:before {
+  right: 15px;
+}
+
+.kind-list__item {
+  margin: 10px 0;
+  background-color: #fff;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.kind-list__item:first-child {
+  margin-top: 0;
+}
+
+.kind-list__img {
+  width: 30px;
+  height: 30px;
+}
+
+.kind-list__item-hd {
+  padding: 20px;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+.kind-list__item-hd_show {
+  opacity: 0.4;
+}
+
+.kind-list__item-bd {
+  height: 0;
+  overflow: hidden;
+}
+
+.kind-list__item-bd_show {
+  height: auto;
 }
 </style>
