@@ -6,9 +6,22 @@
     </div>
     <div class="page__bd page__bd_spacing">
       <div class="kind-list">
-        <div v-for="item in list">
+        <div v-for="item in list" :key="index">
           <div class="kind-list__item">
-            <div :id=item.id :class="{'kind-list__item-hd_show':item.open}" class="weui-flex,kind-list__item-hd"></div>
+            <div :id=item.id :class="{'kind-list__item-hd_show':item.open}" class="weui-flex,kind-list__item-hd" @click="kindToggle">
+              <div class="weui-flex__item">{{item.name}}</div>
+              <image class="kind-list__img" :src=" '/../static/images/icon_nav_'+item.id+'.png'"></image>
+            </div>
+            <div :class="{'kind-list__item-bd_show':item.open}" class="kind-list__item-bd">
+              <div :class="{'weui-cells_show':item.open}" class="weui-cells">
+                <div v-for="item in item.pages" :key="index">
+                  <navigator class="weui-cell weui-cell_access" :url=" '/pages/'+item+'/'+item+ ''">
+                    <div class="weui-cell__bd">{{item}}</div>
+                    <div class="weui-cell__ft weui-cell__ft_in-access"></div>
+                  </navigator>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -25,7 +38,7 @@ export default {
         {
           id: 'form',
           name: '表单',
-          open: true,
+          open: false,
           pages: ['button', 'list', 'input', 'slider', 'uploader']
         },
         {
@@ -60,6 +73,17 @@ export default {
   },
 
   methods: {
+    kindToggle(e) {
+      var id = e.currentTarget.id, list = this.list;
+      for (var i = 0, len = list.length; i < len; ++i) {
+        if (list[i].id == id) {
+          list[i].open = !list[i].open
+        } else {
+          list[i].open = false
+        }
+      }
+      this.list = list;
+    }
   },
 
   created() {
