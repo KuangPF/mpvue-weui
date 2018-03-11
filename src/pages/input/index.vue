@@ -22,7 +22,6 @@
           <div class="weui-cell__bd">添加更多</div>
         </div>
       </div>
-
       <div class="weui-cells__title">复选列表项</div>
       <div class="weui-cells weui-cells_after-title">
         <checkbox-group @bindchange="checkboxChange">
