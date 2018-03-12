@@ -45,8 +45,8 @@ npm run dev
 - [x] Grid
 - [x] Icons
 - [x] Loadmore
-- [ ] Panel
-- [ ] Preview
+- [x] Panel
+- [x] Preview
 - [ ] Progress
 
 #### 操作反馈
