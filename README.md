@@ -50,7 +50,7 @@ npm run dev
 - [x] Progress
 
 #### 操作反馈
-- [ ] Actionsheet
+- [x] Actionsheet
 - [ ] Dialog
 - [ ] Msg
 - [ ] Picker
