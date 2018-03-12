@@ -12,7 +12,7 @@ export default {
   // 这个字段走 app.json
   config: {
     pages: [
-      'pages/badge/badge',
+      'pages/flex/flex',
       'pages/index/index',
       'pages/button/button',
       'pages/list/list',
@@ -20,7 +20,8 @@ export default {
       'pages/slider/slider',
       'pages/uploader/uploader',
 
-      'pages/article/article'
+      'pages/article/article',
+      'pages/badge/badge'
     ], // Will be filled in webpack
     window: {
       backgroundTextStyle: 'light',
