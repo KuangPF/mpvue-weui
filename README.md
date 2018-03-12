@@ -1,6 +1,6 @@
-# wxapp-vue
+# mpvue-weui
 
-> 用 vue 写小程序，使用 mpvue 框架实现小程序的一些基本组件与功能。
+> 用 vue 写小程序，使用 mpvue 框架重写 WeUI。
 
 ### 前言
 
