@@ -12,7 +12,6 @@ export default {
   // 这个字段走 app.json
   config: {
     pages: [
-      'pages/toast/toast',
       'pages/index/index',
       'pages/button/button',
       'pages/list/list',
@@ -37,7 +36,9 @@ export default {
       'pages/msg/msg',
       'pages/msg-fail/msg-fail',
       'pages/msg-success/msg-success',
-      'pages/picker/picker'
+      'pages/picker/picker',
+      'pages/toast/toast',
+      'pages/navbar/navbar'
     ], // Will be filled in webpack
     window: {
       backgroundTextStyle: 'light',

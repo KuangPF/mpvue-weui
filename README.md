@@ -57,7 +57,7 @@ npm run dev
 - [x] Toast
 
 #### 导航相关
-- [ ] Navbar
+- [x] Navbar
 - [ ] Tabbar
 
 #### 搜索相关
