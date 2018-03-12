@@ -12,7 +12,7 @@ export default {
   // 这个字段走 app.json
   config: {
     pages: [
-      'pages/icons/icons',
+      'pages/loadmore/loadmore',
       'pages/index/index',
       'pages/button/button',
       'pages/list/list',
@@ -25,7 +25,8 @@ export default {
       'pages/flex/flex',
       'pages/footer/footer',
       'pages/gallery/gallery',
-      'pages/grid/grid'
+      'pages/grid/grid',
+      'pages/icons/icons'
     ], // Will be filled in webpack
     window: {
       backgroundTextStyle: 'light',
