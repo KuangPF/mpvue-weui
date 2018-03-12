@@ -41,7 +41,7 @@ npm run dev
 - [x] Badge
 - [x] Flex
 - [x] Footer
-- [ ] Gallery
+- [x] Gallery
 - [ ] Grid
 - [ ] Icons
 - [ ] Loadmore
