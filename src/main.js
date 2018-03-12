@@ -41,7 +41,9 @@ export default {
       'pages/navbar/navbar',
       'pages/tabbar/tabbar',
 
-      'pages/searchbar/searchbar'
+      'pages/searchbar/searchbar',
+
+      'pages/componentsTest/componentsTest'
     ], // Will be filled in webpack
     window: {
       backgroundTextStyle: 'light',
