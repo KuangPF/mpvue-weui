@@ -53,8 +53,8 @@ npm run dev
 - [x] Actionsheet
 - [x] Dialog
 - [x] Msg
-- [ ] Picker
-- [ ] Toast
+- [x] Picker
+- [x] Toast
 
 #### 导航相关
 - [ ] Navbar
