@@ -1,8 +1,8 @@
 {
-  "name": "wxapp-vue",
+  "name": "mpvue-weui",
   "version": "1.0.0",
-  "description": "用 vue 写小程序，使用 mpvue 框架实现小程序的一些基本组件与功能。",
-  "author": "kuangpengfei <kuangpengfei@youloft.com>",
+  "description": "用 vue 写小程序，使用 mpvue 框架重写 WeUI。",
+  "author": "kuangpengfei <kuangpf1995@gmail.com>",
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
