@@ -42,8 +42,8 @@ npm run dev
 - [x] Flex
 - [x] Footer
 - [x] Gallery
-- [ ] Grid
-- [ ] Icons
+- [x] Grid
+- [x] Icons
 - [ ] Loadmore
 - [ ] Panel
 - [ ] Preview
