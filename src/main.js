@@ -12,10 +12,11 @@ export default {
   // 这个字段走 app.json
   config: {
     pages: [
-      'pages/input/input',
-      'pages/list/list',
+      'pages/slider/slider',
+      'pages/index/index',
       'pages/button/button',
-      'pages/index/index'
+      'pages/list/list',
+      'pages/input/input'
     ], // Will be filled in webpack
     window: {
       backgroundTextStyle: 'light',
