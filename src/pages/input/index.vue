@@ -145,8 +145,8 @@
       <div class="weui-cells weui-cells_after-title">
         <div class="weui-cell weui-cell_select">
           <div class="weui-cell__hd" style="width: 105px;padding-left:0">
-            <picker @bindchange="bindCountryCodeChange" range="countryCodes">
-              <div class="weui-select">+86</div>
+            <picker @change="bindCountryCodeChange" :range="countryCodes">
+              <div class="weui-select">{{countryCodes[countryCodesIndex]}}</div>
             </picker>
           </div>
           <div class="weui-cell__bd weui-cell__bd_in-select-before">
@@ -159,8 +159,8 @@
       <div class="weui-cells weui-cells_after-title">
         <div class="weui-cell weui-cell_select">
           <div class="weui-cell__bd">
-            <picker bindchange="bindAccountChange" range="accounts">
-              <div class="weui-select">微信</div>
+            <picker @change="bindAccountChange" :range="accounts">
+              <div class="weui-select">{{accounts[accountsIndex]}}</div>
             </picker>
           </div>
         </div>
@@ -169,14 +169,14 @@
             <div class="weui-label">国家/地区</div>
           </div>
           <div class="weui-cell__bd">
-            <picker bindchange="bindCountryChange" range="countries">
-              <div class="weui-select weui-select_in-select-after">中国</div>
+            <picker @change="bindCountryChange" :range="countries">
+              <div class="weui-select weui-select_in-select-after">{{countries[countryIndex]}}</div>
             </picker>
           </div>
         </div>
       </div>
 
-      <checkbox-group @change="bindAgreeChange">
+      <checkbox-group @click="bindAgreeChange">
         <label class="weui-agree" for="weuiAgree">
           <div class="weui-agree__text">
             <checkbox class="weui-agree__checkbox" id="weuiAgree" value="agree" checked="isAgree" />
@@ -204,8 +204,11 @@ export default {
       time: '09:01',
       date: '2015-09-01',
       countryCodes: ["+86", "+80", "+84", "+87"],
+      countryCodesIndex: 0,
       countries: ["中国", "美国", "英国"],
+      countryIndex: 0,
       accounts: ["微信号", "QQ", "Email"],
+      accountsIndex: 0,
 
       radioItems: [
         { name: 'cell standard', value: '0' },
@@ -215,6 +218,8 @@ export default {
         { name: 'standard is dealt for u.', value: '0', checked: true },
         { name: 'standard is dealicient for u.', value: '1', checked: false }
       ],
+
+      isAgree:false
     }
   },
   methods: {
@@ -254,6 +259,19 @@ export default {
       setTimeout(() => {
         this.showTopTips = false;
       }, 2000)
+    },
+
+    bindCountryChange(e) {
+      this.countryIndex = e.mp.detail.value;
+    },
+    bindAccountChange(e) {
+      this.accountsIndex = e.mp.detail.value;
+    },
+    bindCountryCodeChange(e) {
+      this.countryCodesIndex = e.mp.detail.value;
+    },
+    bindAgreeChange(e) {
+      this.isAgree = !this.isAgree;
     }
   }
 }

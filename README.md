@@ -10,5 +10,42 @@
 
 由于是小程序，所以首先想到了实现一下小程序的一些组件，包括 button、loading、picker 等等。总的效果就像[weui](https://weui.io/)。或者说用 vue 重写[weui](https://weui.io/)。
 
+### 重写状态
+
+#### 表单
+- [x] Button
+- [x] Input
+- [x] List
+- [ ] Slider
+- [ ] Uploader
+
+#### 基础组件
+- [ ] Article
+- [ ] Badge
+- [ ] Flex
+- [ ] Footer
+- [ ] Gallery
+- [ ] Grid
+- [ ] Icons
+- [ ] Loadmore
+- [ ] Panel
+- [ ] Preview
+- [ ] Progress
+
+#### 操作反馈
+- [ ] Actionsheet
+- [ ] Dialog
+- [ ] Msg
+- [ ] Picker
+- [ ] Toast
+
+#### 导航相关
+- [ ] Navbar
+- [ ] Tabbar
+
+#### 搜索相关
+- [ ] Searchbar
+
+
 ### 正在重写中...
 
