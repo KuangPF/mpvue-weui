@@ -39,8 +39,8 @@ npm run dev
 #### 基础组件
 - [x] Article
 - [x] Badge
-- [ ] Flex
-- [ ] Footer
+- [x] Flex
+- [x] Footer
 - [ ] Gallery
 - [ ] Grid
 - [ ] Icons
