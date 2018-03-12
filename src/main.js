@@ -38,12 +38,15 @@ export default {
       'pages/msg-success/msg-success',
       'pages/picker/picker',
       'pages/toast/toast',
-      'pages/navbar/navbar'
+      'pages/navbar/navbar',
+      'pages/tabbar/tabbar',
+
+      'pages/searchbar/searchbar'
     ], // Will be filled in webpack
     window: {
       backgroundTextStyle: 'light',
       navigationBarBackgroundColor: '#fff',
-      navigationBarTitleText: 'WeChat',
+      navigationBarTitleText: 'mpvue for weui',
       navigationBarTextStyle: 'black'
     }
   }
