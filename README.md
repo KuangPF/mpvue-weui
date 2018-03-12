@@ -34,7 +34,7 @@ npm run dev
 - [x] Input
 - [x] List
 - [x] Slider
-- [ ] Uploader
+- [x] Uploader
 
 #### 基础组件
 - [ ] Article
