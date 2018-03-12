@@ -29,6 +29,12 @@ npm run dev
 方式二：
 npm 安装 （准备中...）
 ```
+### 效果
+
+![mpvue-weui-demo01](https://github.com/KuangPF/mpvue-weui/blob/master/static/demo/mpvue-weui-demo01.png)
+![mpvue-weui-demo02](https://github.com/KuangPF/mpvue-weui/blob/master/static/demo/mpvue-weui-demo02.png)
+![mpvue-weui-demo03](https://github.com/KuangPF/mpvue-weui/blob/master/static/demo/mpvue-weui-demo03.png)
+![mpvue-weui-demo01](https://github.com/KuangPF/mpvue-weui/blob/master/static/demo/mpvue-weui-demo04.png)
 
 ### 重写状态
 
