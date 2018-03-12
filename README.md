@@ -52,7 +52,7 @@ npm run dev
 #### 操作反馈
 - [x] Actionsheet
 - [x] Dialog
-- [ ] Msg
+- [x] Msg
 - [ ] Picker
 - [ ] Toast
 

@@ -12,7 +12,9 @@ export default {
   // 这个字段走 app.json
   config: {
     pages: [
-      'pages/dialog/dialog',
+      'pages/msg/msg',
+      'pages/msg-fail/msg-fail',
+      'pages/msg-success/msg-success',
       'pages/index/index',
       'pages/button/button',
       'pages/list/list',
@@ -32,7 +34,8 @@ export default {
       'pages/preview/preview',
       'pages/progress/progress',
 
-      'pages/actionsheet/actionsheet'
+      'pages/actionsheet/actionsheet',
+      'pages/dialog/dialog'
     ], // Will be filled in webpack
     window: {
       backgroundTextStyle: 'light',
