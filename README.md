@@ -37,7 +37,7 @@ npm run dev
 - [x] Uploader
 
 #### 基础组件
-- [ ] Article
+- [x] Article
 - [ ] Badge
 - [ ] Flex
 - [ ] Footer
