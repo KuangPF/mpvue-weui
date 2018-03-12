@@ -47,7 +47,7 @@ npm run dev
 - [x] Loadmore
 - [x] Panel
 - [x] Preview
-- [ ] Progress
+- [x] Progress
 
 #### 操作反馈
 - [ ] Actionsheet
