@@ -13,7 +13,6 @@
 ### Use
 
 ``` bash
-方式一：
 1. git clone
 git clone https://github.com/KuangPF/wxapp-vue.git
 
@@ -26,8 +25,6 @@ npm run dev
 4. 预览
 打开微信开发者工具，新建项目，将目录指向 /dist 即可
 
-方式二：
-npm 安装 （准备中...）
 ```
 ### 效果
 
@@ -73,5 +70,4 @@ npm 安装 （准备中...）
 - [x] Searchbar
 
 
-### 正在重写中...
-
+### 踩坑文档编写中...

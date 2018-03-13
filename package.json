@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "用 vue 写小程序，使用 mpvue 框架重写 WeUI。",
   "author": "kuangpengfei <kuangpf1995@gmail.com>",
-  "private": true,
+  "private": false,
   "scripts": {
     "dev": "node build/dev-server.js",
     "start": "node build/dev-server.js",
