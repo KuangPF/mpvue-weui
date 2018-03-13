@@ -10,7 +10,7 @@
 
 由于是小程序，所以首先想到了实现一下小程序的一些组件，包括 button、loading、picker 等等。总的效果就像[weui](https://weui.io/)，或者说用 vue 重写[weui](https://weui.io/)。
 
-### Use
+### 开发预览
 
 ``` bash
 1. git clone
