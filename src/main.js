@@ -12,7 +12,6 @@ export default {
   // 这个字段走 app.json
   config: {
     pages: [
-      'pages/test/test',
       'pages/index/index',
       'pages/button/button',
       'pages/list/list',
@@ -44,7 +43,9 @@ export default {
 
       'pages/searchbar/searchbar',
 
-      'pages/componentsTest/componentsTest'
+      'pages/componentsTest/componentsTest',
+
+      'pages/test/test'
     ], // Will be filled in webpack
     window: {
       backgroundTextStyle: 'light',
