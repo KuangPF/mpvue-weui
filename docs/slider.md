@@ -1,3 +1,13 @@
+# Slider
+滑动选择器。
+
+`mpvue` 对小程序原生组件 `slider` 的各个属性完全支持，还是有两个坑要说下（其实大部分坑都是由于小程序原生组件的绑定事件在 `mpvue` 框架中写法不同造成的）：
+
+!> 1. `slider`的属性`bindchange`和`bindchanging` 在`mpvue`框架中的写法为: `@change`和`@changing`
+
+!> 2. 类型为事件的属性在完成触发事件后，取值的方式为：`event.mp.detail = {value: value}`
+
+``` vue
 <template>
   <div class="page">
     <div class="page__bd page__bd_spacing">
@@ -43,3 +53,8 @@ slider {
   margin-bottom: 60px;
 }
 </style>
+
+```
+
+**效果**
+![slider01](_img/slider/slider01.png)
