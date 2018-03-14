@@ -23,6 +23,8 @@ const appEntry = { app: resolve('./src/main.js') }
 const pagesEntry = getEntry(resolve('./src/pages'), 'main.js')
 const entry = Object.assign({}, appEntry, pagesEntry)
 
+process.noDeprecation = true
+
 module.exports = {
   entry: entry,
   target: require('mpvue-webpack-target'),
