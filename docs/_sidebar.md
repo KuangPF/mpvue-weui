@@ -22,6 +22,7 @@
   * [footer](footer.md)
   * [gallery](gallery.md)
   * [grid](grid.md)
+  * [icons](icons.md)
 * 操作反馈
 * 导航相关
 * 搜索相关

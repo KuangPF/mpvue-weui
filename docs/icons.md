@@ -1,3 +1,38 @@
+# Icons
+图标
+
+在 `mpvue` 框架使用 `icon` 组件就能实现这个功能，该组件有以下属性：
+
+### type
+* 类型：String
+* 默认值：无
+* 可选值：
+  * success
+  * success_no_circle
+  * info
+  * warn
+  * waiting
+  * cancel
+  * download
+  * search
+  * clear
+* 说明：icon的类型
+
+### size
+* 类型：Number
+* 默认值：23
+* 可选值：
+* 说明：icon的类型
+
+### color
+* 类型：Color
+* 默认值：无
+* 可选值：
+* 说明：icon的颜色，同css的color
+
+本示例是基于 `mpvue` 重写了官网 icon 的例子,示例代码如下：
+
+``` vue
 <template>
   <div class="page">
     <div class="group weui-flex">
@@ -21,7 +56,6 @@
 </template>
 
 <script>
-import base64 from '../../../static/images/base64';
 export default {
   data() {
     return {
@@ -34,13 +68,8 @@ export default {
       ]
     }
   },
-  mounted() {
-    this.icon = base64.icon20;
-  },
   methods: {
-
   }
-
 }
 </script>
 
@@ -49,3 +78,9 @@ export default {
   margin-top: 50px;
 }
 </style>
+
+```
+
+**效果**
+
+![icons01](_img/icons01.png)
