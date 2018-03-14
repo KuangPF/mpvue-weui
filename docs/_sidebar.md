@@ -20,6 +20,7 @@
   * [badage](badage.md)
   * [flex](flex.md)
   * [footer](footer.md)
+  * [gallery](gallery.md)
 * 操作反馈
 * 导航相关
 * 搜索相关
