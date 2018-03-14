@@ -1,40 +1,16 @@
 <template>
   <div class="page">
-    <!-- <div class="weui-cells__title">带图标、说明的列表项</div>
-    <div class="weui-cells weui-cells_after-title">
-      <div class="weui-cell">
-        <div class="weui-cell__hd">
-          <image :src="icon" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+    <checkbox-group @change="checkboxChange">
+      <label class="weui-cell weui-check__label" v-for="item in checkboxItems" :key="index">
+        <checkbox class="weui-check" :value="item.value" :checked="item.checked" />
+        <div class="weui-cell__hd weui-check__hd_in-checkbox">
+          <icon class="weui-icon-checkbox_circle" type="circle" size="23" v-if="!item.checked"></icon>
+          <icon class="weui-icon-checkbox_success" type="success" size="23" v-if="item.checked"></icon>
         </div>
-        <div class="weui-cell__bd">标题文字</div>
-        <div class="weui-cell__ft">说明文字</div>
-      </div>
-      <div class="weui-cell">
-        <div class="weui-cell__hd">
-          <image :src="icon" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
-        </div>
-        <div class="weui-cell__bd">标题文字</div>
-        <div class="weui-cell__ft">说明文字</div>
-      </div>
-    </div> -->
-
-    <div class="weui-cells__title">带图标、说明、跳转的列表项</div>
-    <div class="weui-cells weui-cells_after-title">
-      <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
-        <div class="weui-cell__hd">
-          <image :src="icon" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
-        </div>
-        <div class="weui-cell__bd">cell standard</div>
-        <div class="weui-cell__ft weui-cell__ft_in-access">说明文字</div>
-      </navigator>
-      <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
-        <div class="weui-cell__hd">
-          <image :src="icon" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
-        </div>
-        <div class="weui-cell__bd">cell standard</div>
-        <div class="weui-cell__ft weui-cell__ft_in-access">说明文字</div>
-      </navigator>
-    </div>
+        <div class="weui-cell__bd">{{item.name}}</div>
+      </label>
+    </checkbox-group>
+  </div>
   </div>
 </template>
 
@@ -43,24 +19,35 @@ import base64 from '../../../static/images/base64';
 export default {
   data() {
     return {
-      icon: ''
+      icon: '',
+      radioItems: [
+        { name: 'cell standard', value: '0' },
+        { name: 'cell standard', value: '1', checked: true }
+      ],
+      checkboxItems: [
+        { name: 'standard is dealt for u.', value: '0', checked: true },
+        { name: 'standard is dealicient for u.', value: '1', checked: false }
+      ],
     }
   },
   mounted() {
     this.icon = base64.icon20;
   },
   methods: {
-    formSubmit() {
-      console.log('tijiao');
-    },
-    formReset() {
-      console.log('ssss')
-    },
-    launchAppError(e) {
-      console.log(e);
-    },
-    getuserinfo(e) {
-      console.log(e);
+    checkboxChange(e) {
+      console.log('checkbox发生change事件，携带value值为：' + e.mp.detail.value);
+      var checkboxItems = this.checkboxItems, values = e.mp.detail.value;
+      for (var i = 0, lenI = checkboxItems.length; i < lenI; ++i) {
+        checkboxItems[i].checked = false;
+
+        for (var j = 0, lenJ = values.length; j < lenJ; ++j) {
+          if (checkboxItems[i].value == values[j]) {
+            checkboxItems[i].checked = true;
+            break;
+          }
+        }
+      }
+      this.checkboxItems = checkboxItems;
     }
   }
 

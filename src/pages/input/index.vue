@@ -9,9 +9,9 @@
       <div class="weui-toptips weui-toptips_warn" v-if="showTopTips">错误提示</div>
       <div class="weui-cells__title">单选列表项</div>
       <div class="weui-cells weui-cells_after-title">
-        <radio-group>
-          <label class="weui-cell weui-check__label" v-for="item in radioItems" :key="index" :value="item.value" @click="radioChange(item.value)">
-            <radio class="weui-check" value="item.value" checked="item.checked" />
+        <radio-group @change="radioChange">
+          <label class="weui-cell weui-check__label" v-for="item in radioItems" :key="index">
+            <radio class="weui-check" :value="item.value" :checked="item.checked" />
             <div class="weui-cell__bd">{{item.name}}</div>
             <div class="weui-cell__ft weui-cell__ft_in-radio" v-if="item.checked">
               <icon class="weui-icon-radio" type="success_no_circle" size="16"></icon>
@@ -25,17 +25,16 @@
 
       <div class="weui-cells__title">复选列表项</div>
       <div class="weui-cells weui-cells_after-title">
-        <checkbox-group>
-          <label class="weui-cell weui-check__label" v-for="item in checkboxItems" :key="index" @click="checkboxChange(item.value)">
-            <checkbox class="weui-check" value="item.value" checked="item.checked" />
-
-            <div class="weui-cell__hd weui-check__hd_in-checkbox">
-              <icon class="weui-icon-checkbox_circle" type="circle" size="23" v-if="!item.checked"></icon>
-              <icon class="weui-icon-checkbox_success" type="success" size="23" v-if="item.checked"></icon>
-            </div>
-            <div class="weui-cell__bd">{{item.name}}</div>
-          </label>
-        </checkbox-group>
+        <checkbox-group @change="checkboxChange">
+      <label class="weui-cell weui-check__label" v-for="item in checkboxItems" :key="index">
+        <checkbox class="weui-check" :value="item.value" :checked="item.checked" />
+        <div class="weui-cell__hd weui-check__hd_in-checkbox">
+          <icon class="weui-icon-checkbox_circle" type="circle" size="23" v-if="!item.checked"></icon>
+          <icon class="weui-icon-checkbox_success" type="success" size="23" v-if="item.checked"></icon>
+        </div>
+        <div class="weui-cell__bd">{{item.name}}</div>
+      </label>
+    </checkbox-group>
         <div class="weui-cell weui-cell_link">
           <div class="weui-cell__bd">添加更多</div>
         </div>
@@ -117,7 +116,7 @@
         <div class="weui-cell weui-cell_switch">
           <div class="weui-cell__bd">标题文字</div>
           <div class="weui-cell__ft">
-            <switch checked />
+            <switch checked @change = "switchChange"/>
           </div>
         </div>
       </div>
@@ -219,32 +218,35 @@ export default {
         { name: 'standard is dealicient for u.', value: '1', checked: false }
       ],
 
-      isAgree:false
+      isAgree: false
     }
   },
   methods: {
-    checkboxChange(value) {
-      let checkboxItems = this.checkboxItems;
-      let checkboxItemsArry = new Array();
-      for (let i = 0; i < checkboxItems.length; ++i) {
-        if (checkboxItems[i].value === value) {
-          checkboxItems[i].checked = !checkboxItems[i].checked;
-        }
-        if (checkboxItems[i].checked) {
-          checkboxItemsArry.push(checkboxItems[i].value);
+    checkboxChange(e) {
+      console.log('checkbox发生change事件，携带value值为：' + e.mp.detail.value);
+      var checkboxItems = this.checkboxItems, values = e.mp.detail.value;
+      for (var i = 0, lenI = checkboxItems.length; i < lenI; ++i) {
+        checkboxItems[i].checked = false;
+
+        for (var j = 0, lenJ = values.length; j < lenJ; ++j) {
+          if (checkboxItems[i].value == values[j]) {
+            checkboxItems[i].checked = true;
+            break;
+          }
         }
       }
       this.checkboxItems = checkboxItems;
-      console.log('checkbox发生change事件，携带value值为：' + checkboxItemsArry);
     },
-    radioChange(value) {
-      console.log("radio 携带的 value 值为：" + value);
+    radioChange(e) {
+      console.log('radio发生change事件，携带value值为：' + e.mp.detail.value);
       let radioItems = this.radioItems;
       for (let i = 0; i < radioItems.length; ++i) {
-        radioItems[i].checked = radioItems[i].value === value
+        radioItems[i].checked = radioItems[i].value === e.mp.detail.value;
       }
-
       this.radioItems = radioItems;
+    },
+    switchChange(e) {
+      console.log("switch发生change事件，携带value值为："+ e.mp.detail.value);
     },
     bindDateChange(e) {
       this.date = e.mp.detail.value;

@@ -16,7 +16,7 @@
 
 ## 该文档的目的
 
-其实 `mpvue` 框架对小程序的原生组件支持地非常好，但对于一些新人来说，比如我，在开始接触`mpvue` 的时候由于不太了解。就造成了对于在小程序中的一些方法不知在 `mpvue` 如何实现。举一个简单的例子：小程序 `picker`组件有一个`bindchange`属性，刚开始时我完全将这个属性移植到了 `mpvue`中，发现并不能用，waht，这岂不是很尴尬。然后就问了一下大佬[anchengjian](https://github.com/anchengjian),得知在 `mpvue` 框架下要写成 `@change`,这样问题就解决了。因此这篇文档的主要作用就是将自己踩的一些坑记录下来，然后在说下在 `mpvue` 框架下如何使用 `WeUI`。
+其实 `mpvue` 框架对小程序的原生组件支持地非常好，但对于一些新人来说，比如我，在开始接触`mpvue` 的时候由于不太了解。就造成了对于在小程序中的一些方法不知在 `mpvue` 如何实现。举一个简单的例子：小程序 `picker`组件有一个`bindchange`属性，刚开始时我完全将这个属性移植到了 `mpvue`中，发现并不能用，waht，这岂不是很尴尬。然后就问了一下大佬[anchengjian](https://github.com/anchengjian),得知在 `mpvue` 框架下要写成 `@change`,这样问题就解决了。因此这篇文档的主要作用就是将自己踩的一些坑记录下来，然后再说下在 `mpvue` 框架下如何使用 `WeUI`。
 
 ?> [anchengjian](https://github.com/anchengjian)    :heart:    [aOrz](https://github.com/aOrz) 为  `mpvue` 开发者。没错，就两个人写了一个框架。
 

@@ -5,6 +5,8 @@
 
 ?> 由于是在小程序中使用，于是就直接使用了 [weiui-wxss](https://github.com/Tencent/weui-wxss/)中的样式文件,官方提供的是`weui.wxss`,因此手动转成了`weui.css`,然后引入即可。
 
+这里提供一个链接：[KuangPF/mpvue-weui](https://github.com/KuangPF/mpvue-weui/blob/master/static/weui/weui.css)
+
 ## 使用
 
 **这里 cell 为例**：
