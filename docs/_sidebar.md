@@ -16,6 +16,7 @@
   * [slider](slider.md)
   * [uploader](uploader.md)
 * 组件
+  * [article](article.md)
 * 操作反馈
 * 导航相关
 * 搜索相关
