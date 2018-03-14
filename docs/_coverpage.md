@@ -9,4 +9,6 @@
 * 快捷开发，只需引入 `weui.css`
 
 [GitHub](https://github.com/KuangPF/mpvue-weui)
+<!-- [mpvue](https://github.com/Meituan-Dianping/mpvue) -->
 [Get Started](#mpvue-weui)
+
