@@ -1,3 +1,11 @@
+# Flex
+flex 布局
+
+`WeUI`提供了快速的 flex 布局
+
+
+#### 示例代码
+``` vue
 <template>
   <div class="page">
     <div class="page__bd page__bd_spacing">
@@ -56,16 +64,10 @@
 </template>
 
 <script>
-import base64 from '../../../static/images/base64';
 export default {
   data() {
     return {
-      icon: '',
-      files: []
     }
-  },
-  mounted() {
-    this.icon = base64.icon20;
   },
   methods: {
 
@@ -85,3 +87,12 @@ export default {
   color: #cfcfcf;
 }
 </style>
+
+
+```
+
+从示例代码可以看出，首先需要在要进行`flex`布局的父元素上加上类 `weui-flex` ,然后将每个 `flex` 元素加上类 `weui-flex__item`即可。
+
+**效果**
+
+![flex01](_img/flex01.png)

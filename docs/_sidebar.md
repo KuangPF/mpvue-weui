@@ -18,6 +18,7 @@
 * 组件
   * [article](article.md)
   * [badage](badage.md)
+  * [flex](flex.md)
 * 操作反馈
 * 导航相关
 * 搜索相关
