@@ -43,9 +43,8 @@ export default {
 
       'pages/searchbar/searchbar',
 
-      'pages/componentsTest/componentsTest',
+      'pages/componentsTest/componentsTest'
 
-      'pages/test/test'
     ], // Will be filled in webpack
     window: {
       backgroundTextStyle: 'light',

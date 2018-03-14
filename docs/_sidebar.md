@@ -7,6 +7,7 @@
 * 表单
 
   * [button](button.md)
+  * [list](list.md)
 * 组件
 * 操作反馈
 * 导航相关
