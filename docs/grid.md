@@ -1,3 +1,7 @@
+# Grid
+`grid` 九宫格，功能类似于微信钱包界面中的九宫格，用于展示有多个相同级别的入口。包含功能的图标和简洁的文字描述。实现这个布局主要就是用了 `weui` 中的 `.weui-grid`,这种布局在 `mpvue`中也是完全支持的，示例代码如下：
+
+``` vue
 <template>
   <div class="page">
     <div class="page__bd">
@@ -31,13 +35,9 @@ export default {
       ]
     }
   },
-  mounted() {
-    this.icon = base64.icon20;
-  },
   methods: {
 
   }
-
 }
 </script>
 
@@ -46,3 +46,9 @@ page {
   margin-top: 50px;
 }
 </style>
+
+```
+
+**效果**
+
+![grid01](_img/grid01.png)
