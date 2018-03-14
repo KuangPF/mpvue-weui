@@ -1,3 +1,10 @@
+# Uploader
+图片上传
+
+## 图片上传
+图片上传的实现主要使用了微信原生API `wx.chooseImage(OBJECT)`
+
+``` vue
 <template>
   <div class="page">
     <div class="weui-uploader__bd">
@@ -17,16 +24,11 @@
 </template>
 
 <script>
-import base64 from '../../../static/images/base64';
 export default {
   data() {
     return {
-      icon: '',
       files: []
     }
-  },
-  mounted() {
-    this.icon = base64.icon20;
   },
   methods: {
     chooseImage(e) {
@@ -54,12 +56,45 @@ export default {
       })
     }
   }
-
 }
 </script>
 
 <style>
-slider {
-  margin-bottom: 60px;
-}
+
 </style>
+
+```
+
+**效果**
+
+![uploader](_img/uploader/uploader01.gif)
+
+## 图片预览
+
+图片预览的实现主要使用了微信原生API `wx.previewImage(OBJECT)`
+
+``` vue
+<script>
+export default {
+  data() {
+    return {
+      files: []
+    }
+  },
+  methods: {
+    predivImage(e) {
+      console.log(e);
+      wx.previewImage({
+        current: e.currentTarget.id, // 当前显示图片的http链接
+        urls: this.files // 需要预览的图片http链接列表
+      })
+    }
+  }
+}
+</script>
+```
+
+**效果**
+
+![uploader](_img/uploader/uploader02.gif)
+

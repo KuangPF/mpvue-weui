@@ -2,10 +2,10 @@
 <!-- ![logo](_img/weui-logo.jpg) -->
 # mpvue-weui <small>1.0.0</small>
 
-> 基于 mpvue 框架，重写 WeUI
+> 基于 <a href="https://github.com/Meituan-Dianping/mpvue" style=" border-bottom:0;">mpvue</a> 框架，重写 WeUI
 
 * 基于小程序原生组件
-* mpvue 完美支持
+* [mpvue](https://github.com/Meituan-Dianping/mpvue) 完美支持
 * 快捷开发，只需引入 `weui.css`
 
 [GitHub](https://github.com/KuangPF/mpvue-weui)

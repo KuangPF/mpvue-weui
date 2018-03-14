@@ -14,6 +14,7 @@
   * [list](list.md)
   * [input](input.md)
   * [slider](slider.md)
+  * [uploader](uploader.md)
 * 组件
 * 操作反馈
 * 导航相关

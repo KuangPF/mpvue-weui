@@ -26,7 +26,7 @@
 
 !> 1. 对于一在小程序组件中为 `Handler`或者为`EventHandle` 的属性，在 `mpvue` 框架中要写成 `vue` 的事件绑定形式,就像:`bindchange`写成`@change`
 
-!> 2. 对于一些在小程序中绑定值的属性，例如上面 `picker` 组件中的 `value`，在 `mpvue` 框架中要写成 `:vue`
+!> 2. 对于一些在小程序中绑定值的属性，例如上面 `picker` 组件中的 `value`，在 `mpvue` 框架中要写成 `:value="date"`
 
 
 ## 2. 触发事件取值问题
