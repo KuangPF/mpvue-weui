@@ -31,5 +31,6 @@
   * [actionsheet](action-sheet.md)
   * [dialog](dialog.md)
   * [msg](msg.md)
+  * [picker](picker.md)
 * 导航相关
 * 搜索相关
