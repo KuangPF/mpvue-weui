@@ -24,9 +24,7 @@ export default {
       wx.showActionSheet({
         itemList: ['A', 'B', 'C'],
         success: function (res) {
-          if (!res.cancel) {
-            console.log(res.tapIndex)
-          }
+          console.log(res.tapIndex)
         }
       });
     }

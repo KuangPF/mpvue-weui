@@ -1,31 +1,9 @@
 <template>
   <div class="page">
-    <div class="weui-progress">
-      <div class="weui-progress__bar">
-        <progress percent="0" stroke-width="3" />
+    <div class="page__bd">
+      <div class="weui-btn-area">
+        <button type="default" @click="open">ActionSheet</button>
       </div>
-      <div class="weui-progress__opr">
-        <icon type="cancel" size="22"></icon>
-      </div>
-    </div>
-    <div class="weui-progress">
-      <div class="weui-progress__bar">
-        <progress percent="80" stroke-width="3" />
-      </div>
-      <div class="weui-progress__opr">
-        <icon type="cancel" size="22"></icon>
-      </div>
-    </div>
-    <div class="weui-progress">
-      <div class="weui-progress__bar">
-        <progress :percent="progress" stroke-width="3" show-info="true"/>
-      </div>
-      <!-- <div class="weui-progress__opr">
-        <icon type="cancel" size="22"></icon>
-      </div> -->
-    </div>
-    <div class="weui-btn-area">
-      <button type="primary" @click="upload" :disabled="disabled">上传</button>
     </div>
   </div>
 </template>
@@ -35,34 +13,20 @@ import base64 from '../../../static/images/base64';
 export default {
   data() {
     return {
-      progress: 0,
-      disabled: false
+      itemList:['A', 'B', 'C']
     }
-  },
-  mounted() {
-
   },
   methods: {
-    upload() {
-      if (this.disabled) return;
-      this.progress = 0;
-      this.disabled = true;
-      this._next.call(this);
-    },
-
-    _next() {
-      var _this = this;
-      if (_this.progress >= 100) {
-        _this.disabled = false;
-        return true;
-      }
-      _this.progress++
-      setTimeout(function () {
-        _this._next.call(_this);
-      }, 20);
+    open() {
+      let _this = this;
+      wx.showActionSheet({
+        itemList: this.itemList,
+        success: function (res) {
+          console.log("index：" + res.tapIndex, "用户选的值为：" + _this.itemList[res.tapIndex]);
+        }
+      });
     }
   }
-
 }
 </script>
 
@@ -71,9 +35,6 @@ page {
   margin-top: 50px;
   padding: 15px;
   box-sizing: border-box;
-}
-.weui-progress {
-  margin-bottom: 25px;
 }
 </style>
 
