@@ -8,7 +8,7 @@
               <div class="weui-navbar__title">{{item}}</div>
             </div>
           </block>
-          <div class="weui-navbar__slider" :class="{'weui-navbar__slider_0':activeIndex == 0,'weui-navbar__slider_1':activeIndex == 1,'weui-navbar__slider_2':activeIndex == 2 }"></div>
+          <div class="weui-navbar__slider" :class="navbarSliderClass"></div>
         </div>
         <div class="weui-tab__panel">
           <div class="weui-tab__content" :hidden="activeIndex != 0">选项一的内容</div>
@@ -30,6 +30,19 @@ export default {
       sliderOffset: 0,
       sliderLeft: 0,
       fontSize: 30
+    }
+  },
+  computed: {
+    navbarSliderClass() {
+      if (this.activeIndex == 0) {
+        return 'weui-navbar__slider_0'
+      }
+      if (this.activeIndex == 1) {
+        return 'weui-navbar__slider_1'
+      }
+      if (this.activeIndex == 2) {
+        return 'weui-navbar__slider_2'
+      }
     }
   },
   mounted() {

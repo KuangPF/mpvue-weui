@@ -1,3 +1,12 @@
+# Panel
+面板
+
+Panel（`weui-panel`）由head（可选）、body、foot（可选）三部分组成，主要承载了图文组合列表`weui-media-box_appmsg`、文字组合列表`weui-media-box_text`以及小图文组合列表`weui-media-box_small-appmsg`。
+body部分根据不同业务可自定义不同的内容。foot部分默认支持“查看更多”的样式，需要在`weui-panel`扩展一个`weui-panel_access`的类。
+
+图文组合列表：包括封面图、标题与描述，封面图居左，与文字垂直居中对齐，示例代码如下：
+
+``` vue
 <template>
   <div class="page">
     <div class="page__hd">
@@ -35,7 +44,6 @@
           </div>
         </div>
       </div>
-
       <!-- 图文组合列表  end -->
 
       <!-- 文字组合列表  start -->
@@ -125,3 +133,9 @@ export default {
 <style>
 
 </style>
+
+```
+
+**效果**
+
+![panel01](_img/panel01.png)
