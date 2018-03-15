@@ -30,5 +30,6 @@
 * 操作反馈
   * [actionsheet](action-sheet.md)
   * [dialog](dialog.md)
+  * [msg](msg.md)
 * 导航相关
 * 搜索相关
