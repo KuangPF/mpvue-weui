@@ -37,6 +37,7 @@ export default {
       'pages/msg-fail/msg-fail',
       'pages/msg-success/msg-success',
       'pages/picker/picker',
+      'pages/mulLinkagePicker/mulLinkagePicker',
       'pages/toast/toast',
       'pages/navbar/navbar',
       'pages/tabbar/tabbar',

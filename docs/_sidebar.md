@@ -15,6 +15,7 @@
   * [input](input.md)
   * [slider](slider.md)
   * [uploader](uploader.md)
+
 * 组件
   * [article](article.md)
   * [badage](badage.md)
@@ -27,10 +28,13 @@
   * [panel](panel.md)
   * [preview](preview.md)
   * [progress](progress.md)
+
 * 操作反馈
   * [actionsheet](action-sheet.md)
   * [dialog](dialog.md)
   * [msg](msg.md)
   * [picker](picker.md)
+
 * 导航相关
+
 * 搜索相关

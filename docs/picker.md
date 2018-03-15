@@ -219,4 +219,108 @@ page {
 
 ## 多级联动选择器
 
-等待更新...
+看了一下小程序的开发文档，好像没有发现可以直接实现多级联动的组件或者可选的 API（如果有，请打醒我），不过它提供了自定义选择器的组件`picker-view`和`picker-view-column`，`picker-view-column`相当于是选择器的每一列，并且`picker-view-column`之间的数据都是独立的，而且`picker-view`提供了`bindchange`属性，那么就可以根据触发`bindchange`事件返回的值来判断哪一列发生了改变，从而再实时设置其他列的数据。这就是实现多级联动的思路。
+
+在`mpvue`中实现的代码如下（样式代码详情在 pages/mulLinkagePicker/index.vue）：
+```vue
+<template>
+  <div class="page">
+    <div :class="{'pickerMask':isShowMask}"></div>
+    <button type="default" @click="showPickerView">多级联动选择</button>
+    <div class="weui-picker" :class="{'weui_picker_view_show':pickerShow}">
+      <div class="weui-picker__hd">
+        <div href="javascript:;" class="weui-picker__action" @click="pickerCancel">取消</div>
+        <div href="javascript:;" class="weui-picker__action" @click="pickerConfirm">确定</div>
+      </div>
+      <picker-view indicator-style="height: 40px;" :value="pickerValue" class="weui_picker_view" @change="pickerChange">
+        <picker-view-column>
+          <div class="picker-item" v-for="item in columuOne" :key="index">{{item}}</div>
+        </picker-view-column>
+        <picker-view-column>
+          <div class="picker-item" v-for="item in columnTwo" :key="index">{{item}}</div>
+        </picker-view-column>
+      </picker-view>
+    </div>
+  </div>
+</template>
+
+<script>
+import mulLinkAgeArray from '../../../static/js/mulLinkAgeArray'
+export default {
+  data() {
+    return {
+      pickerShow: false,
+      isShowMask: false,
+      pickerValue: [0, 1],
+      mulLinkAgeArray: mulLinkAgeArray.value,
+      columuOne: [],
+      columnTwo: []
+    }
+  },
+  mounted() {
+    this._initPicker();
+  },
+  methods: {
+    pickerChange(e) {
+      let _this = this;
+      let value = e.mp.detail.value;
+      // 如果是第一列滚动
+      if (value[0] !== _this.pickerValue[0]) {
+        let columnTwoNew = _this.mulLinkAgeArray[value[0]].children;
+        _this.columnTwo = [];
+        for (let i = 0; i < columnTwoNew.length; i++) {
+          _this.columnTwo.push(columnTwoNew[i].label);
+        }
+        _this.pickerValue = value;
+        _this.pickerValue[1] = 0;
+      }
+      // 如果第二列滚动
+      if (value[1] !== this.pickerValue[1]) {
+        _this.pickerValue[1] = e.mp.detail.value[1];
+      }
+      console.log('选中的值为：' + _this.mulLinkAgeArray[value[0]].label + '-' + _this.mulLinkAgeArray[value[0]].children[value[1]].label);
+      console.log('pickerValue：' + this.pickerValue);
+    },
+    pickerConfirm() {
+      console.log('选中的值为：' + this.mulLinkAgeArray[this.pickerValue[0]].label + '-' + this.mulLinkAgeArray[this.pickerValue[0]].children[this.pickerValue[1]].label);
+      console.log('pickerValue：' + this.pickerValue);
+      this.isShowMask = false;
+      this.pickerShow = false;
+    },
+    pickerCancel() {
+      this.isShowMask = false;
+      this.pickerShow = false;
+    },
+    showPickerView() {
+      this.isShowMask = true;
+      this.pickerShow = true;
+    },
+    _initPicker() {
+      let _this = this;
+      let mulLinkAgeArray = this.mulLinkAgeArray;
+      for (let i = 0; i < mulLinkAgeArray.length; i++) {
+        _this.columuOne.push(mulLinkAgeArray[i].label);
+      }
+      // 渲染第二列
+      let columnTwoArray = mulLinkAgeArray[_this.pickerValue[0]].children;
+      for (let i = 0; i < columnTwoArray.length; i++) {
+        _this.columnTwo.push(columnTwoArray[i].label)
+      }
+    }
+  }
+}
+</script>
+
+<style>
+
+</style>
+
+```
+**效果**
+
+![picker06](_img/picker06.gif)
+
+!> 这是二级联动，三级联动类似，其实就是处理这样一个逻辑：当某一列发生改变时，根据`e.mp.detail.value`的值来判断哪些列的数据需要改变，那么就将这些列的数据重新渲染一遍。
+
+## 小结
+这章主要说的是小程序中的各种控件，掌握了这些控件，相信在用`mpvue`开发小程序的时候就不会担心控件问题了。

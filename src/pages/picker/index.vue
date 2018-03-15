@@ -21,6 +21,7 @@
         <picker class="weui-btn" mode="region" :value="region" @change="CityChange">
           <button type="default">城市选择器</button>
         </picker>
+        <button type="default" class="weui-btn" @click="multiLinkagePicker">多级联动</button>
       </div>
     </div>
   </div>
@@ -57,6 +58,11 @@ export default {
     },
     CityChange(e) {
       console.log('选中的城市为：' + e.mp.detail.value);
+    },
+    multiLinkagePicker() {
+      wx.navigateTo({
+        url: '../mulLinkagePicker/mulLinkagePicker'
+      })
     }
   }
 }

@@ -4,7 +4,7 @@
  * Licensed under the MIT license
  */
 
- page {
+page {
   line-height: 1.6;
   font-family: -apple-system-font, Helvetica Neue, sans-serif;
 }
@@ -26,7 +26,8 @@ icon {
   border-top: 1rpx solid #d9d9d9;
 }
 
-.weui-cells:after, .weui-cells:before {
+.weui-cells:after,
+.weui-cells:before {
   content: " ";
   position: absolute;
   left: 0;
@@ -154,7 +155,8 @@ icon {
   margin-right: 3.2px;
 }
 
-.weui-icon-checkbox_circle, .weui-icon-checkbox_success {
+.weui-icon-checkbox_circle,
+.weui-icon-checkbox_success {
   margin-left: 4.6px;
   margin-right: 4.6px;
 }
@@ -223,7 +225,8 @@ icon {
   text-align: right;
 }
 
-.weui-cell_warn, .weui-textarea-counter_warn {
+.weui-cell_warn,
+.weui-textarea-counter_warn {
   color: #e64340;
 }
 
@@ -237,7 +240,8 @@ icon {
   border-top: 1rpx solid #d9d9d9;
 }
 
-.weui-form-preview:after, .weui-form-preview:before {
+.weui-form-preview:after,
+.weui-form-preview:before {
   content: " ";
   position: absolute;
   left: 0;
@@ -398,7 +402,8 @@ icon {
   padding-left: 0;
 }
 
-.weui-cell__bd_in-select-before, .weui-cell__hd_in-select-after {
+.weui-cell__bd_in-select-before,
+.weui-cell__hd_in-select-after {
   padding-left: 15px;
 }
 
@@ -406,7 +411,8 @@ icon {
   padding-right: 0;
 }
 
-.weui-vcode-btn, .weui-vcode-img {
+.weui-vcode-btn,
+.weui-vcode-img {
   margin-left: 5px;
   height: 2.58823529em;
   vertical-align: middle;
@@ -502,7 +508,8 @@ icon {
   border: 1px solid #d9d9d9;
 }
 
-.weui-uploader__input-box:after, .weui-uploader__input-box:before {
+.weui-uploader__input-box:after,
+.weui-uploader__input-box:before {
   content: " ";
   position: absolute;
   top: 50%;
@@ -526,7 +533,8 @@ icon {
   border-color: #999;
 }
 
-.weui-uploader__input-box:active:after, .weui-uploader__input-box:active:before {
+.weui-uploader__input-box:active:after,
+.weui-uploader__input-box:active:before {
   background-color: #999;
 }
 
@@ -790,7 +798,6 @@ icon {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
-
   to {
     -webkit-transform: rotate(1turn);
     transform: rotate(1turn);
@@ -802,7 +809,6 @@ icon {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
-
   to {
     -webkit-transform: rotate(1turn);
     transform: rotate(1turn);
@@ -889,7 +895,8 @@ icon {
   border-top: 1rpx solid #e5e5e5;
 }
 
-.weui-panel:after, .weui-panel:before {
+.weui-panel:after,
+.weui-panel:before {
   content: " ";
   position: absolute;
   left: 0;
@@ -1197,4 +1204,15 @@ icon {
   line-height: 28px;
   color: #09bb07;
   white-space: nowrap;
+}
+
+/* add by KuangPF  V1.0.0*/
+
+a {
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+  -webkit-tap-highlight-color: transparent;
 }
