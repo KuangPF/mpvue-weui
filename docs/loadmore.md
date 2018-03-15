@@ -1,3 +1,9 @@
+# Loadmore
+加载更多
+
+`Loadmore`用于实现加载更多的效果，使用比较简单，加上相关的 class 就可以实现这种效果，示例代码如下：
+
+``` vue
 <template>
   <div class="page">
     <div class="weui-loadmore">
@@ -14,31 +20,23 @@
 </template>
 
 <script>
-import base64 from '../../../static/images/base64';
 export default {
   data() {
     return {
-      iconSize: [20, 30, 40, 50, 60, 70],
-      iconColor: [
-        'red', 'orange', 'yellow', 'green', 'rgb(0,255,255)', 'blue', 'purple'
-      ],
-      iconType: [
-        'success', 'success_no_circle', 'info', 'warn', 'waiting', 'cancel', 'download', 'search', 'clear'
-      ]
+
     }
-  },
-  mounted() {
-    this.icon = base64.icon20;
   },
   methods: {
 
   }
-
 }
 </script>
 
 <style>
-.group {
-  margin-top: 50px;
-}
 </style>
+
+```
+
+**效果**
+
+![loadmore](_img/loadmore01.png)
