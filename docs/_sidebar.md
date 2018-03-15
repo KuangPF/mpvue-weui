@@ -25,6 +25,7 @@
   * [icons](icons.md)
   * [loadermore](loadmore.md)
   * [panel](panel.md)
+  * [preview](preview.md)
 * 操作反馈
 * 导航相关
 * 搜索相关

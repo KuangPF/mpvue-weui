@@ -1,3 +1,9 @@
+# Preview
+预览
+
+`preview` 用于实现表单预览，类似于微信支付账单之类的。表单预览分为 head（`weui-form-preview__hd`），body（`weui-form-preview__bd`）和 foot（`weui-form-preview__ft`）这三大部分，因此实现这一功能加上`weui.css`的一些类即可，示例代码如下：
+
+``` vue
 <template>
   <div class="page">
     <div class="weui-form-preview">
@@ -36,13 +42,6 @@ export default {
       icon60: base64.icon60
     }
   },
-  mounted() {
-
-  },
-  methods: {
-
-  }
-
 }
 </script>
 
@@ -51,3 +50,11 @@ page {
   margin-top: 50px;
 }
 </style>
+
+```
+
+**效果**
+
+![preview01](_img/preview01.png)
+
+
