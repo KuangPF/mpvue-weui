@@ -1,3 +1,11 @@
+# Dialog
+弹框
+
+`Dialog`，也叫 “modal”，表现为带遮罩的弹框。可以分为 `Alert` 和 `Confirm` 两种。
+
+实现这个功能调用微信 API `wx.showModal()` 即可，然后设置不同的参数就可以实现`Alert` 或者 `Confirm`，示例代码如下：
+
+``` vue
 <template>
   <div class="page">
     <div class="weui-btn-area">
@@ -54,3 +62,9 @@ page {
 }
 </style>
 
+
+```
+
+**效果**
+
+![dialog01](_img/dialog01.gif)
