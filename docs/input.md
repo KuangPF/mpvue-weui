@@ -61,7 +61,7 @@ export default {
 </style>
 
 ```
-![input01](_img/input/input01.png)
+![input01](_img/input01.png)
 
 ##### 踩坑
 !> 1.`<radio-group>`中的`bindchange`要写成`@change="radioChange"`
@@ -137,7 +137,7 @@ export default {
 </style>
 ```
 
-![input02](_img/input/input02.png)
+![input02](_img/input02.png)
 
 ##### 踩坑
 !> 与`radio`差不多，都是一些写法的问题，看下示例代码应该就可以明白。
@@ -189,7 +189,7 @@ export default {
 </style>
 ```
 
-![input03](_img/input/input03.png)
+![input03](_img/input03.png)
 
 ##### 踩坑
 !> 与`radio`和`checkbox`差不多，都是一些写法的问题，看下示例代码应该就可以明白。

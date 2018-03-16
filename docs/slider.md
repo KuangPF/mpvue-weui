@@ -57,4 +57,4 @@ slider {
 ```
 
 **效果**
-![slider01](_img/slider/slider01.png)
+![slider01](_img/slider01.png)

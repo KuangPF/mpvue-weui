@@ -67,7 +67,7 @@ export default {
 
 **效果**
 
-![uploader](_img/uploader/uploader01.gif)
+![uploader01](_img/uploader01.gif)
 
 ## 图片预览
 
@@ -96,5 +96,5 @@ export default {
 
 **效果**
 
-![uploader](_img/uploader/uploader02.gif)
+![uploader02](_img/uploader02.gif)
 

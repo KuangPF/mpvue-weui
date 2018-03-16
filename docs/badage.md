@@ -87,4 +87,4 @@ export default {
 
 **效果**
 
-![badge](_img/badge/badge01.png)
+![badge](_img/badge01.png)
