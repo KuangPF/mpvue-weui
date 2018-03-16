@@ -41,3 +41,4 @@
   * [tabbar](tabbar.md)
 
 * 搜索相关
+  * [search](search.md)

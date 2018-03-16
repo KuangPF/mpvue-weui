@@ -1,3 +1,9 @@
+# Search
+搜索栏
+
+`search`这部分是利用小程序`input`组件实现，在下面的示例中主要使用了`focus`和`bindinput`两个属性，由于`mpvue`从底层支持 Vue.js 语法和构建工具体系，因此可以用`vue`的`v-model`进行双向数据绑定，示例如下：
+
+``` vue
 <template>
   <div class="page">
     <div class="page__hd">
@@ -61,15 +67,14 @@ export default {
     },
     hideInput() {
       this.inputVal = '';
-      this.inputShowed = false;
+      this.inputShowed = false
     },
     clearInput() {
       this.inputVal = '';
     },
     inputTyping(e) {
       console.log(e);
-      this.inputVal = e.mp.detail.value;
-      console.log('输入信息为：'+e.mp.detail.value);
+      this.inputVal = e.mp.detail.value
     }
   }
 }
@@ -87,3 +92,9 @@ export default {
   padding: 12px 15px 12px 35px;
 }
 </style>
+
+```
+
+**效果**
+
+![search01](_img/search01.gif)
