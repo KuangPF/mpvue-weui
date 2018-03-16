@@ -53,5 +53,37 @@ export default {
       navigationBarTitleText: 'weui for mpvue',
       navigationBarTextStyle: 'black'
     }
+    /* tabBar: {
+      color: '#999999',
+      selectedColor: '#1AAD16',
+      backgroundColor: '#ffffff',
+      borderStyle: 'white',
+      list: [
+        {
+          pagePath: 'pages/tabbar/tabbar',
+          text: '微信',
+          iconPath: 'static/images/icon_nav_button.png',
+          selectedIconPath: 'static/images/icon_nav_button.png'
+        },
+        {
+          pagePath: 'pages/tabbar/tabbar',
+          text: '通讯录',
+          iconPath: 'static/images/icon_nav_cell.png',
+          selectedIconPath: 'static/images/icon_nav_cell.png'
+        },
+        {
+          pagePath: 'pages/tabbar/tabbar',
+          text: '发现',
+          iconPath: 'static/images/icon_nav_cell.png',
+          selectedIconPath: 'static/images/icon_nav_cell.png'
+        },
+        {
+          pagePath: 'pages/tabbar/tabbar',
+          text: '我',
+          iconPath: 'static/images/icon_nav_toast.png',
+          selectedIconPath: 'static/images/icon_nav_toast.png'
+        }
+      ]
+    } */
   }
 }

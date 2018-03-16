@@ -38,5 +38,6 @@
 
 * 导航相关
   * [navbar](navbar.md)
+  * [tabbar](tabbar.md)
 
 * 搜索相关
