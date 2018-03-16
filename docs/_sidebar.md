@@ -34,6 +34,7 @@
   * [dialog](dialog.md)
   * [msg](msg.md)
   * [picker](picker.md)
+  * [toast](toast.md)
 
 * 导航相关
 
