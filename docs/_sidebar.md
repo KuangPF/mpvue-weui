@@ -37,5 +37,6 @@
   * [toast](toast.md)
 
 * 导航相关
+  * [navbar](navbar.md)
 
 * 搜索相关
