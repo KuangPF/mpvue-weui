@@ -30,6 +30,7 @@ export default {
       'pages/panel/panel',
       'pages/preview/preview',
       'pages/progress/progress',
+      'pages/swiper/swiper',
 
       'pages/actionsheet/actionsheet',
       'pages/dialog/dialog',

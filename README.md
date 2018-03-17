@@ -62,6 +62,7 @@ npm run dev
 - [x] Panel
 - [x] Preview
 - [x] Progress
+- [x] Swiper
 
 #### 操作反馈
 - [x] Actionsheet
