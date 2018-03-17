@@ -28,6 +28,7 @@
   * [panel](panel.md)
   * [preview](preview.md)
   * [progress](progress.md)
+  * [swiper](swiper.md)
 
 * 操作反馈
   * [actionsheet](action-sheet.md)
