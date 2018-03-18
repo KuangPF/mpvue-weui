@@ -1,6 +1,6 @@
 {
   "name": "mpvue-weui",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "用 vue 写小程序，使用 mpvue 框架重写 WeUI。",
   "author": "kuangpengfei <kuangpf1995@gmail.com>",
   "private": false,
