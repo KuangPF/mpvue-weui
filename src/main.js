@@ -45,6 +45,7 @@ export default {
 
       'pages/searchbar/searchbar',
 
+      'pages/test/test',
       'pages/componentsTest/componentsTest'
 
     ], // Will be filled in webpack
