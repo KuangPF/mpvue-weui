@@ -1,6 +1,6 @@
 <template>
   <div class="page">
-    <div :class="{'pickerMask':isShowMask}"></div>
+    <div :class="{'pickerMask':isShowMask}" @click="maskClick"></div>
     <button type="default" @click="showPickerView">多级联动选择</button>
     <div class="weui-picker" :class="{'weui_picker_view_show':pickerShow}">
       <div class="weui-picker__hd">
@@ -69,6 +69,9 @@ export default {
     showPickerView() {
       this.isShowMask = true;
       this.pickerShow = true;
+    },
+    maskClick() {
+      this.pickerCancel();
     },
     _initPicker() {
       let _this = this;
