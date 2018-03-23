@@ -9,7 +9,7 @@
 ### size
 * 类型： String
 * 默认值： default
-* 可选值： 
+* 可选值：
     * default
     * mini
 * 说明：按钮的大小
@@ -113,8 +113,8 @@
 * 说明：会话内消息卡片图片
 
 ### show-message-card
-* 类型：Boolean 
-* 默认值：false 
+* 类型：Boolean
+* 默认值：false
 * 可选值：
     * false
     * true
@@ -130,7 +130,7 @@
 * 默认值：无
 * 说明：获取用户手机号回调
 
-### bindgetphonenumber
+### binderrror
 * 类型：Handler
 * 默认值：无
 * 说明：当使用开放能力时，发生错误的回调
