@@ -16,8 +16,9 @@
               <div class="weui-uploader__bd">
                 <div class="weui-uploader__files" id="uploaderFiles">
                   <block v-for="item in files" :key="index">
-                    <div class="weui-uploader__file" @click="predivImage" :id="item">
-                      <image class="weui-uploader__img" :src="item" mode="aspectFill" />
+                    <div class="weui-uploader__file">
+                      <image class="weui-uploader__img" :src="item" mode="aspectFill" @click="predivImage" :id="item" />
+                      <div class="delete-icon" @click="deleteImg" :id="item"></div>
                     </div>
                   </block>
                   <div class="weui-uploader__file">
@@ -61,7 +62,7 @@ export default {
   },
   methods: {
     chooseImage(e) {
-      var _this = this;
+      let _this = this;
       wx.chooseImage({
         count: 1, // 默认9
         sizeType: ['original', 'compressed'], // 可以指定是原图还是压缩图，默认二者都有
@@ -85,11 +86,51 @@ export default {
         current: e.currentTarget.id, // 当前显示图片的http链接
         urls: this.files // 需要预览的图片http链接列表
       })
+    },
+    deleteImg(e) {
+      Array.prototype.indexOf = function (val) {
+        for (let i = 0; i < this.length; i++) {
+          if (this[i] == val) return i;
+        }
+        return -1;
+      };
+      Array.prototype.remove = function (val) {
+        let index = this.indexOf(val);
+        if (index > -1) {
+          this.splice(index, 1);
+        }
+      };
+      this.files.remove(e.currentTarget.id);
     }
   }
 }
 </script>
 
 <style>
-
+.weui-uploader__file {
+  position: relative;
+}
+.weui-uploader__bd {
+  overflow: visible;
+}
+.delete-icon {
+  position: absolute;
+  width: 40rpx;
+  height: 40rpx;
+  background: #f43530;
+  right: 0;
+  top: -20rpx;
+  border-radius: 40rpx;
+  z-index: 5;
+}
+.delete-icon::before {
+  content: "";
+  width: 26rpx;
+  height: 4rpx;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+}
 </style>
