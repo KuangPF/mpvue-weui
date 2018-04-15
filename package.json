@@ -47,6 +47,7 @@
     "mpvue-template-compiler": "^1.0.7",
     "mpvue-webpack-target": "^1.0.0",
     "opn": "^5.1.0",
+    "portfinder": "^1.0.13",
     "optimize-css-assets-webpack-plugin": "^2.0.0",
     "ora": "^1.2.0",
     "postcss-loader": "^2.0.6",
