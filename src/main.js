@@ -12,7 +12,7 @@ export default {
   // 这个字段走 app.json
   config: {
     pages: [
-      'pages/index/index',
+      '^pages/index/index',
       'pages/button/button',
       'pages/list/list',
       'pages/input/input',
@@ -45,7 +45,7 @@ export default {
 
       'pages/searchbar/searchbar',
 
-      '^pages/request/request',
+      'pages/request/request',
 
       'pages/test/test',
       'pages/componentsTest/componentsTest'
