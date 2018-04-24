@@ -64,6 +64,12 @@ export default {
           name: '搜索相关',
           open: false,
           pages: ['searchbar']
+        },
+        {
+          id: 'issues',
+          name: 'issues 需求',
+          open: false,
+          pages: ['request']
         }
       ]
     }

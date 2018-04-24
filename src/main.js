@@ -45,6 +45,8 @@ export default {
 
       'pages/searchbar/searchbar',
 
+      'pages/request/request',
+
       'pages/test/test',
       'pages/componentsTest/componentsTest'
 
