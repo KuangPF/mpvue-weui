@@ -89,7 +89,7 @@
             <input class="weui-input" placeholder="请输入验证码" />
           </div>
           <div class="weui-cell__ft">
-            <image class="weui-vcode-img" src="../../../static/images/vcode.jpg" style="width: 108px"></image>
+            <image class="weui-vcode-img" src="/static/images/vcode.jpg" style="width: 108px"></image>
           </div>
         </div>
       </div>

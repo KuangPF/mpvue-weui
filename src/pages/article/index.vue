@@ -18,8 +18,8 @@
                         consequat.
                     </div>
                     <div class="weui-article__p">
-                        <image class="weui-article__img" src="../../../static/images/pic_article.png" mode="aspectFit" style="height: 180px" />
-                        <image class="weui-article__img" src="../../../static/images/pic_article.png" mode="aspectFit" style="height: 180px" />
+                        <image class="weui-article__img" src="/static/images/pic_article.png" mode="aspectFit" style="height: 180px" />
+                        <image class="weui-article__img" src="/static/images/pic_article.png" mode="aspectFit" style="height: 180px" />
                     </div>
                 </div>
                 <div class="weui-article__section">

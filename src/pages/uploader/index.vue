@@ -22,16 +22,16 @@
                     </div>
                   </div>
                   <div class="weui-uploader__file">
-                    <image class="weui-uploader__img" src="../../../static/images/pic_160.png" mode="aspectFill" />
+                    <image class="weui-uploader__img" src="/static/images/pic_160.png" mode="aspectFill" />
                   </div>
                   <div class="weui-uploader__file">
-                    <image class="weui-uploader__img" src="../../../static/images/pic_160.png" mode="aspectFill" />
+                    <image class="weui-uploader__img" src="/static/images/pic_160.png" mode="aspectFill" />
                   </div>
                   <div class="weui-uploader__file">
-                    <image class="weui-uploader__img" src="../../../static/images/pic_160.png" mode="aspectFill" />
+                    <image class="weui-uploader__img" src="/static/images/pic_160.png" mode="aspectFill" />
                   </div>
                   <div class="weui-uploader__file weui-uploader__file_status">
-                    <image class="weui-uploader__img" src="../../../static/images/pic_160.png" mode="aspectFill" />
+                    <image class="weui-uploader__img" src="/static/images/pic_160.png" mode="aspectFill" />
                     <div class="weui-uploader__file-content">
                       <icon type="warn" size="23" color="#F43530"></icon>
                     </div>

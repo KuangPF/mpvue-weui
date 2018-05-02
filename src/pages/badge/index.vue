@@ -21,7 +21,7 @@
         <div class="weui-cells weui-cells_after-title">
             <div class="weui-cell">
                 <div class="weui-cell__hd" style="position: relative;margin-right: 10px;">
-                    <image src="../../../static/images/pic_160.png" style="width: 50px; height: 50px; display: block"/>
+                    <image src="/static/images/pic_160.png" style="width: 50px; height: 50px; display: block"/>
                     <div class="weui-badge" style="position: absolute;top: -.4em;right: -.4em;">8</div>
                 </div>
                 <div class="weui-cell__bd">
