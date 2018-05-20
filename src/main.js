@@ -3,8 +3,8 @@ import App from './App'
 import './css/app.css'
 import store from './store';
 Vue.config.productionTip = false;
-App.mpType = 'app'
-
+App.mpType = 'app';
+Vue.prototype.$store = store;
 import '../static/weui/weui.css'
 const app = new Vue({
   store,
