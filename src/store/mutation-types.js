@@ -1,3 +1,3 @@
 // mutation 常量
 
-export const USERINFO = 'USERINFO';
+export const SET_USERINFO = 'SET_USERINFO';
