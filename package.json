@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "flyio": "^0.5.4",
-    "mpvue": "^1.0.10",
+    "mpvue": "^1.0.12",
     "vuex": "^2.3.1"
   },
   "devDependencies": {
@@ -44,7 +44,7 @@
     "html-webpack-plugin": "^2.28.0",
     "http-proxy-middleware": "^0.17.3",
     "mpvue-loader": "^1.0.9",
-    "mpvue-template-compiler": "^1.0.10",
+    "mpvue-template-compiler": "^1.0.12",
     "mpvue-webpack-target": "^1.0.0",
     "opn": "^5.1.0",
     "portfinder": "^1.0.13",
