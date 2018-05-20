@@ -1,12 +1,12 @@
 <template>
   <div class="page">
     <div class="page__hd">
-      <div class="page__title">页面通讯管理</div>
-      <div class="page__desc">利用 vuex 实现数据的整理</div>
+      <div class="page__title">页面通讯</div>
+      <div class="page__desc">利用 vuex 实现数据的管理</div>
     </div>
     <div class="page__bd page__bd_spacing">
       <button class="weui-btn mini-btn" type="primary" size="mini" @click="getMpvueInfo">点击显示 state => mpvueInfo</button>
-      <button class="weui-btn mini-btn" type="warn" size="mini" @click="commitMpvueInfo">点击修改 state => mpvueInfo</button>
+      <button class="weui-btn mini-btn" type="warn" size="mini" @click="commitMpvueInfo">点击更新 state => mpvueInfo</button>
       <div class="mpvueInfo-desc" v-show="showMpvueInfo">{{mpvueInfo}}</div>
       <button type="primary" class="mt-15" @click="turnToVuexPage">点击跳转</button>
     </div>

@@ -7,7 +7,6 @@ App.mpType = 'app';
 Vue.prototype.$store = store;
 import '../static/weui/weui.css'
 const app = new Vue({
-  store,
   App
 })
 app.$mount();
