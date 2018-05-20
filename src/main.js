@@ -1,12 +1,16 @@
 import Vue from 'vue'
 import App from './App'
 import './css/app.css'
-Vue.config.productionTip = false
+import store from './store';
+Vue.config.productionTip = false;
 App.mpType = 'app'
 
 import '../static/weui/weui.css'
-const app = new Vue(App)
-app.$mount()
+const app = new Vue({
+  store,
+  App
+})
+app.$mount();
 
 export default {
   // 这个字段走 app.json
