@@ -1,1 +1,1 @@
-export const userinfo = state => state.userinfo;
+export const mpvueInfo = state => state.mpvueInfo;

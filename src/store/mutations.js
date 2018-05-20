@@ -1,7 +1,7 @@
 import * as type from './mutation-types';
 const mutations = {
-  [type.SET_USERINFO](state, userinfo) { // eslint-disable-line
-    state.userinfo = userinfo;
+  [type.SET_MPVUEINFO](state, mpvueInfo) { // eslint-disable-line
+    state.mpvueInfo = mpvueInfo;
   }
 }
 
