@@ -47,3 +47,4 @@
 * issues 需求
   * [request](request.md)
   * [页面通讯](vuex.md)
+  * [rate](rate.md)

@@ -81,7 +81,7 @@ export default {
           id: 'issues',
           name: 'issues 需求',
           open: false,
-          pages: ['request']
+          pages: ['request', 'vuex', 'rate']
         }
       ]
     };
@@ -104,7 +104,7 @@ export default {
     }
   },
 
-  created() {}
+  created() { }
 };
 </script>
 

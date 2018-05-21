@@ -15,7 +15,7 @@ export default {
   // 这个字段走 app.json
   config: {
     pages: [
-      'pages/index/index',
+      '^pages/index/index',
       'pages/button/button',
       'pages/list/list',
       'pages/input/input',
@@ -51,7 +51,7 @@ export default {
       'pages/request/request',
       'pages/vuex/vuex',
       'pages/vuexPage/vuexPage',
-      '^pages/rate/rate',
+      'pages/rate/rate',
 
       'pages/test/test',
       'pages/componentsTest/componentsTest'
