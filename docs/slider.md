@@ -58,3 +58,8 @@ slider {
 
 **效果**
 ![slider01](_img/slider01.png)
+
+
+**动态修改滑块最大值与最小值**
+
+![slider02](_img/slider02.gif)
