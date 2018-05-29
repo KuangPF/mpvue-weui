@@ -81,6 +81,12 @@ npm run dev
 
 #### 搜索相关
 - [x] Searchbar
+
+#### Issues 相关
+- [x] Request
+- [x] 页面通信（Vuex 实现）
+- [x] Rate
+
 </details>
 
 ### 版本日志
