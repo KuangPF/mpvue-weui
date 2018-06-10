@@ -6,7 +6,7 @@
     </view>
     <div class="page__bd page__bd_spacing">
       <swiper :indicator-dots="indicatorDots" :autoplay="autoplay" :interval="interval" :duration="duration" :circular="circular" @change="swiperChange" @animationfinish="animationfinish">
-        <div v-for="item in imgUrls" :key="index">
+        <div v-for="(item, index) in imgUrls" :key="index">
           <swiper-item>
             <image :src="item" class="slide-image" />
           </swiper-item>
