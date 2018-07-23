@@ -45,9 +45,7 @@ var compiler = webpack(webpackConfig)
 Object.keys(proxyTable).forEach(function (context) {
   var options = proxyTable[context]
   if (typeof options === 'string') {
-    options = {
-      target: options
-    }
+    options = { target: options }
   }
   app.use(proxyMiddleware(options.filter || context, options))
 })
@@ -86,7 +84,7 @@ var readyPromise = new Promise(resolve => {
 module.exports = new Promise((resolve, reject) => {
   portfinder.basePort = port
   portfinder.getPortPromise()
-    .then(newPort => {
+  .then(newPort => {
       if (port !== newPort) {
         console.log(`${port}端口被占用，开启新端口${newPort}`)
       }
@@ -102,7 +100,7 @@ module.exports = new Promise((resolve, reject) => {
           server.close()
         }
       })
-    }).catch(error => {
-      console.log('没有找到空闲端口，请打开任务管理器杀死进程端口再试', error)
-    })
+  }).catch(error => {
+    console.log('没有找到空闲端口，请打开任务管理器杀死进程端口再试', error)
+  })
 })
