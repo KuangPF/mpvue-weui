@@ -57,7 +57,7 @@ export default {
       if (this.disabled) return;
       this.progress = 0;
       this.disabled = true;
-      this._next.call(this);
+      this._next.call(this); // eslint-disable-line
     },
 
     _next() {
@@ -68,7 +68,7 @@ export default {
       }
       _this.progress++
       setTimeout(function () {
-        _this._next.call(_this);
+        _this._next.call(_this); // eslint-disable-line
       }, 20);
     }
   }

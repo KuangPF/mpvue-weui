@@ -29,7 +29,6 @@ export default {
     }
   }
 }
-
 </script>
 <style>
 .counter-warp {

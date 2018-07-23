@@ -15,7 +15,7 @@
             <div :class="{'kind-list__item-bd_show':item1.open}" class="kind-list__item-bd">
               <div :class="{'weui-cells_show':item1.open}" class="weui-cells">
                 <div v-for="(item2,index2) in item1.pages" :key="index2">
-                  <navigator class="weui-cell weui-cell_access" :url=" '/pages/'+item2+'/'+item2+ ''">
+                  <navigator class="weui-cell weui-cell_access" :url=" '/pages/'+item2+'/'+'main'+ ''">
                     <div class="weui-cell__bd">{{item2}}</div>
                     <div class="weui-cell__ft weui-cell__ft_in-access"></div>
                   </navigator>
@@ -91,10 +91,10 @@ export default {
 
   methods: {
     kindToggle(e) {
-      var id = e.currentTarget.id,
-        list = this.list;
+      var id = e.currentTarget.id;
+      var list = this.list;
       for (var i = 0, len = list.length; i < len; ++i) {
-        if (list[i].id == id) {
+        if (list[i].id === id) {
           list[i].open = !list[i].open;
         } else {
           list[i].open = false;

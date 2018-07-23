@@ -224,12 +224,13 @@ export default {
   methods: {
     checkboxChange(e) {
       console.log('checkbox发生change事件，携带value值为：' + e.mp.detail.value);
-      var checkboxItems = this.checkboxItems, values = e.mp.detail.value;
+      var checkboxItems = this.checkboxItems;
+      var values = e.mp.detail.value;
       for (var i = 0, lenI = checkboxItems.length; i < lenI; ++i) {
         checkboxItems[i].checked = false;
 
         for (var j = 0, lenJ = values.length; j < lenJ; ++j) {
-          if (checkboxItems[i].value == values[j]) {
+          if (checkboxItems[i].value === values[j]) {
             checkboxItems[i].checked = true;
             break;
           }

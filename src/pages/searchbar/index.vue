@@ -52,7 +52,7 @@ export default {
   data() {
     return {
       inputShowed: false,
-      inputVal: ""
+      inputVal: ''
     }
   },
   methods: {

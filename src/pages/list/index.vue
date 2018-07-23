@@ -89,7 +89,6 @@ export default {
     this.icon = base64.icon20;
   }
 }
-
 </script>
 <style>
 

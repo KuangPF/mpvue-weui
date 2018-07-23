@@ -24,20 +24,20 @@
 export default {
   data() {
     return {
-      tabs: ["选项一", "选项二", "选项三"],
+      tabs: ['选项一', '选项二', '选项三'],
       activeIndex: 0,
       fontSize: 30
     }
   },
   computed: {
     navbarSliderClass() {
-      if (this.activeIndex == 0) {
+      if (this.activeIndex === 0) {
         return 'weui-navbar__slider_0'
       }
-      if (this.activeIndex == 1) {
+      if (this.activeIndex === 1) {
         return 'weui-navbar__slider_1'
       }
-      if (this.activeIndex == 2) {
+      if (this.activeIndex === 2) {
         return 'weui-navbar__slider_2'
       }
     }
