@@ -1,6 +1,6 @@
 {
   "name": "mpvue-weui",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "用 vue 写小程序，使用 mpvue 框架重写 WeUI。",
   "author": "kuangpengfei <kuangpf1995@gmail.com>",
   "private": false,
@@ -12,13 +12,13 @@
   },
   "dependencies": {
     "flyio": "^0.5.4",
-    "mpvue": "^1.0.11",
+    "mpvue": "^1.0.13",
     "vuex": "^2.3.1"
   },
   "devDependencies": {
-    "mpvue-loader": "^1.1.1-rc.2",
+    "mpvue-loader": "^1.1.2-rc.3",
     "mpvue-webpack-target": "^1.0.0",
-    "mpvue-template-compiler": "^1.0.11",
+    "mpvue-template-compiler": "^1.0.13",
     "portfinder": "^1.0.13",
     "postcss-mpvue-wxss": "^1.0.0",
     "prettier": "~1.12.1",

@@ -1,6 +1,6 @@
 ![logo](_img/mpvue-logo.png)
 <!-- ![logo](_img/weui-logo.jpg) -->
-# mpvue-weui <small>1.0.5</small>
+# mpvue-weui <small>1.0.6</small>
 
 > 基于 <a href="https://github.com/Meituan-Dianping/mpvue" style=" border-bottom:0;">mpvue</a> 框架，重写 WeUI
 
