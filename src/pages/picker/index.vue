@@ -61,7 +61,7 @@ export default {
     },
     multiLinkagePicker() {
       wx.navigateTo({
-        url: '../mulLinkagePicker/mulLinkagePicker'
+        url: '../mulLinkagePicker/main'
       })
     }
   }

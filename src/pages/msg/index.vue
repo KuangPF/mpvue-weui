@@ -23,12 +23,12 @@ export default {
   methods: {
     openSuccess() {
       wx.navigateTo({
-        url: '../msg-success/msg-success'
+        url: '../msg-success/main'
       })
     },
     openFail: function () {
       wx.navigateTo({
-        url: '../msg-fail/msg-fail'
+        url: '../msg-fail/main'
       })
     }
   }
