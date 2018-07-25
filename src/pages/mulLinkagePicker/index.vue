@@ -9,10 +9,10 @@
       </div>
       <picker-view indicator-style="height: 40px;" :value="pickerValue" class="weui_picker_view" @change="pickerChange">
         <picker-view-column>
-          <div class="picker-item" v-for="item in columuOne" :key="index">{{item}}</div>
+          <div class="picker-item" v-for="(item,index) in columuOne" :key="index">{{item}}</div>
         </picker-view-column>
         <picker-view-column>
-          <div class="picker-item" v-for="item in columnTwo" :key="index">{{item}}</div>
+          <div class="picker-item" v-for="(item,index) in columnTwo" :key="index">{{item}}</div>
         </picker-view-column>
       </picker-view>
     </div>

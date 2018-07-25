@@ -6,7 +6,7 @@
     </div>
     <div class="page__bd">
         <div class="weui-grids">
-            <block v-for="item in grids" :key="index">
+            <block v-for="(item,index) in grids" :key="index">
                 <navigator url="" class="weui-grid" hover-class="weui-grid_active">
                     <image class="weui-grid__icon" :src="item.src" />
                     <div class="weui-grid__label">{{item.name}}</div>
