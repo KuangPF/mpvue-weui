@@ -10,7 +10,7 @@
       <div class="weui-cells__title">单选列表项</div>
       <div class="weui-cells weui-cells_after-title">
         <radio-group @change="radioChange">
-          <label class="weui-cell weui-check__label" v-for="item in radioItems" :key="index">
+          <label class="weui-cell weui-check__label" v-for="(item,index) in radioItems" :key="index">
             <radio class="weui-check" :value="item.value" :checked="item.checked" />
             <div class="weui-cell__bd">{{item.name}}</div>
             <div class="weui-cell__ft weui-cell__ft_in-radio" v-if="item.checked">
@@ -26,7 +26,7 @@
       <div class="weui-cells__title">复选列表项</div>
       <div class="weui-cells weui-cells_after-title">
         <checkbox-group @change="checkboxChange">
-      <label class="weui-cell weui-check__label" v-for="item in checkboxItems" :key="index">
+      <label class="weui-cell weui-check__label" v-for="(item,index) in checkboxItems" :key="index">
         <checkbox class="weui-check" :value="item.value" :checked="item.checked" />
         <div class="weui-cell__hd weui-check__hd_in-checkbox">
           <icon class="weui-icon-checkbox_circle" type="circle" size="23" v-if="!item.checked"></icon>
@@ -89,7 +89,7 @@
             <input class="weui-input" placeholder="请输入验证码" />
           </div>
           <div class="weui-cell__ft">
-            <image class="weui-vcode-img" src="/static/images/vcode.jpg" style="width: 108px"></image>
+            <image class="weui-vcode-img" src="/static/images/vcode.jpg" style="width: 108px" />
           </div>
         </div>
       </div>
