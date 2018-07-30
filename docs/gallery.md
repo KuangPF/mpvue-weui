@@ -5,4 +5,4 @@ Gallery用于实现上传图片的展示或幻灯片播放
 
 **效果**
 
-![gallery](_img/uploader/uploader02.gif)
+![gallery](_img/uploader02.gif)
