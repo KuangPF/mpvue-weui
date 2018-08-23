@@ -18,7 +18,7 @@
 
 * 组件
   * [article](article.md)
-  * [badage](badage.md)
+  * [badge](badge.md)
   * [flex](flex.md)
   * [footer](footer.md)
   * [gallery](gallery.md)
