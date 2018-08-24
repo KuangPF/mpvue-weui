@@ -1,4 +1,4 @@
-# Badage
+# Badge
 徽章
 
 #### 带文字的badge
