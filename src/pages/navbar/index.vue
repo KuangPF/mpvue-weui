@@ -45,7 +45,7 @@ export default {
   methods: {
     tabClick(e) {
       console.log(e);
-      this.activeIndex = e.currentTarget.id;
+      this.activeIndex = Number(e.currentTarget.id);
     }
   }
 }
