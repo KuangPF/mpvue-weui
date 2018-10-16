@@ -6,7 +6,7 @@
 
 ### 相关说明
 
-该仓库是基于 `mpvue` 重写 `WeUI`，是一个 demo 库，没有实现组件化，目前 [MPComponent/mpvue-weui](https://github.com/MPComponent/mpvue-weui) 已实现组件化，支持 npm 安装。
+该仓库是基于 `mpvue` 重写 `WeUI`，是一个 `demo` 库，没有实现组件化，目前 [MPComponent/mpvue-weui](https://github.com/MPComponent/mpvue-weui) 已实现组件化，支持 `npm` 安装。
 
 ### 前言
 
