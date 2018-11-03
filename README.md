@@ -130,7 +130,7 @@ npm run dev
 
 ## Contributors
 
-This project exists thanks to all the people who contribute. <img src="https://opencollective.com/mpvue-weui/contributors.svg?width=890&button=false" /></a>
+This project exists thanks to all the people who contribute. <img src="https://opencollective.com/mpvue-weui/contributors.svg?width=890&button=false" />
 
 
 ## Backers
