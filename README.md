@@ -2,7 +2,7 @@
 
 > 用 vue 写小程序，使用 mpvue 框架重写 WeUI。
 
-![GitHub package version](https://img.shields.io/github/package-json/v/KuangPF/mpvue-weui.svg) ![GitHub rep size](https://img.shields.io/github/languages/code-size/KuangPF/mpvue-weui.svg)![license](https://img.shields.io/github/license/KuangPF/mpvue-weui.svg)
+![GitHub package version](https://img.shields.io/github/package-json/v/KuangPF/mpvue-weui.svg) ![Build](https://img.shields.io/circleci/project/github/KuangPF/mpvue-weui/master.svg) ![GitHub rep size](https://img.shields.io/github/languages/code-size/KuangPF/mpvue-weui.svg) ![license](https://img.shields.io/github/license/KuangPF/mpvue-weui.svg)
 
 
 ### 相关说明
@@ -122,7 +122,7 @@ npm run dev
 
 ### Contributors
 
-This project exists thanks to all the people who contribute. <img src="https://opencollective.com/mpvue-weui/contributors.svg?width=890&button=false" />
+Thank you to all the people who already contributed to mpvue-weui. <img src="https://opencollective.com/mpvue-weui/contributors.svg?width=890&button=false" />
 
 ### 结束语
 花了大概一周多的时间来完成了这个项目，过程中收获还是很大的，给我最大的感触就是现在技术发展的很快，如果不学习就真的要落后了。美团开源的[mpvue](https://github.com/Meituan-Dianping/mpvue)是一个非常不错的框架，而且开发者也正在快速的迭代，开发新的功能，所以它的前景是非常值得期待。另外就是非常感谢关注这个仓库的人，谢谢你们的支持，后续我也会继续维护这个仓库，当`mpvue`有了一些新的特性或者一些新的语法的时候也会持续更新。如果各位大佬发现了什么问题欢迎`PR` 或者 `Issues`。
