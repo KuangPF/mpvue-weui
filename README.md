@@ -3,6 +3,8 @@
 > 用 vue 写小程序，使用 mpvue 框架重写 WeUI。
 
 ![GitHub package version](https://img.shields.io/github/package-json/v/KuangPF/mpvue-weui.svg) ![Github release version](https://img.shields.io/github/release/KuangPF/mpvue-weui.svg) ![node](https://img.shields.io/node/v/passport.svg) ![GitHub commit activity the past week, 4 weeks, year](https://img.shields.io/github/commit-activity/y/KuangPF/mpvue-weui.svg) ![GitHub last commit](https://img.shields.io/github/last-commit/KuangPF/mpvue-weui.svg) ![GitHub rep size](https://img.shields.io/github/languages/code-size/KuangPF/mpvue-weui.svg)
+[![Backers on Open Collective](https://opencollective.com/mpvue-weui/backers/badge.svg)](#backers) 
+[![Sponsors on Open Collective](https://opencollective.com/mpvue-weui/sponsors/badge.svg)](#sponsors) 
 
 ### 相关说明
 
@@ -125,3 +127,32 @@ npm run dev
 文档是用 [docsify](https://github.com/QingWei-Li/docsify/)构建，所有文档文件在 `/docs` 目录下面，由于里面图片比较多而且还有`gif`，可能在`git clone`的时候会有一点点慢。
 
 ### 持续维护...
+
+## Contributors
+
+This project exists thanks to all the people who contribute. <img src="https://opencollective.com/mpvue-weui/contributors.svg?width=890&button=false" />
+
+
+## Backers
+
+Thank you to all our backers! 🙏 [[Become a backer](https://opencollective.com/mpvue-weui#backer)]
+
+<a href="https://opencollective.com/mpvue-weui#backers" target="_blank"><img src="https://opencollective.com/mpvue-weui/backers.svg?width=890"></a>
+
+
+## Sponsors
+
+Support this project by becoming a sponsor. Your logo will show up here with a link to your website. [[Become a sponsor](https://opencollective.com/mpvue-weui#sponsor)]
+
+<a href="https://opencollective.com/mpvue-weui/sponsor/0/website" target="_blank"><img src="https://opencollective.com/mpvue-weui/sponsor/0/avatar.svg"></a>
+<a href="https://opencollective.com/mpvue-weui/sponsor/1/website" target="_blank"><img src="https://opencollective.com/mpvue-weui/sponsor/1/avatar.svg"></a>
+<a href="https://opencollective.com/mpvue-weui/sponsor/2/website" target="_blank"><img src="https://opencollective.com/mpvue-weui/sponsor/2/avatar.svg"></a>
+<a href="https://opencollective.com/mpvue-weui/sponsor/3/website" target="_blank"><img src="https://opencollective.com/mpvue-weui/sponsor/3/avatar.svg"></a>
+<a href="https://opencollective.com/mpvue-weui/sponsor/4/website" target="_blank"><img src="https://opencollective.com/mpvue-weui/sponsor/4/avatar.svg"></a>
+<a href="https://opencollective.com/mpvue-weui/sponsor/5/website" target="_blank"><img src="https://opencollective.com/mpvue-weui/sponsor/5/avatar.svg"></a>
+<a href="https://opencollective.com/mpvue-weui/sponsor/6/website" target="_blank"><img src="https://opencollective.com/mpvue-weui/sponsor/6/avatar.svg"></a>
+<a href="https://opencollective.com/mpvue-weui/sponsor/7/website" target="_blank"><img src="https://opencollective.com/mpvue-weui/sponsor/7/avatar.svg"></a>
+<a href="https://opencollective.com/mpvue-weui/sponsor/8/website" target="_blank"><img src="https://opencollective.com/mpvue-weui/sponsor/8/avatar.svg"></a>
+<a href="https://opencollective.com/mpvue-weui/sponsor/9/website" target="_blank"><img src="https://opencollective.com/mpvue-weui/sponsor/9/avatar.svg"></a>
+
+
