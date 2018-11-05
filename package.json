@@ -8,11 +8,13 @@
     "dev": "node build/dev-server.js",
     "start": "node build/dev-server.js",
     "build": "node build/build.js",
-    "lint": "eslint --ext .js,.vue src"
+    "lint": "eslint --ext .js,.vue src",
+    "postinstall": "opencollective-postinstall"
   },
   "dependencies": {
     "flyio": "^0.5.4",
     "mpvue": "^1.0.13",
+    "opencollective-postinstall": "^2.0.1",
     "vuex": "^2.3.1"
   },
   "devDependencies": {
@@ -76,5 +78,9 @@
     "> 1%",
     "last 2 versions",
     "not ie <= 8"
-  ]
+  ],
+  "collective": {
+    "type": "opencollective",
+    "url": "https://opencollective.com/mpvue-weui"
+  }
 }
