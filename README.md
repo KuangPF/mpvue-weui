@@ -2,9 +2,8 @@
 
 > 用 vue 写小程序，使用 mpvue 框架重写 WeUI。
 
-![GitHub package version](https://img.shields.io/github/package-json/v/KuangPF/mpvue-weui.svg) ![Github release version](https://img.shields.io/github/release/KuangPF/mpvue-weui.svg) ![node](https://img.shields.io/node/v/passport.svg) ![GitHub commit activity the past week, 4 weeks, year](https://img.shields.io/github/commit-activity/y/KuangPF/mpvue-weui.svg) ![GitHub last commit](https://img.shields.io/github/last-commit/KuangPF/mpvue-weui.svg) ![GitHub rep size](https://img.shields.io/github/languages/code-size/KuangPF/mpvue-weui.svg)
-[![Backers on Open Collective](https://opencollective.com/mpvue-weui/backers/badge.svg)](#backers) 
-[![Sponsors on Open Collective](https://opencollective.com/mpvue-weui/sponsors/badge.svg)](#sponsors) 
+![GitHub package version](https://img.shields.io/github/package-json/v/KuangPF/mpvue-weui.svg) ![GitHub rep size](https://img.shields.io/github/languages/code-size/KuangPF/mpvue-weui.svg)![license](https://img.shields.io/github/license/KuangPF/mpvue-weui.svg)
+
 
 ### 相关说明
 
@@ -121,6 +120,10 @@ npm run dev
 * 基于 `mpvue 1.0.5`
 * 完成 `WeUI` 重写和文档编写
 
+### Contributors
+
+This project exists thanks to all the people who contribute. <img src="https://opencollective.com/mpvue-weui/contributors.svg?width=890&button=false" />
+
 ### 结束语
 花了大概一周多的时间来完成了这个项目，过程中收获还是很大的，给我最大的感触就是现在技术发展的很快，如果不学习就真的要落后了。美团开源的[mpvue](https://github.com/Meituan-Dianping/mpvue)是一个非常不错的框架，而且开发者也正在快速的迭代，开发新的功能，所以它的前景是非常值得期待。另外就是非常感谢关注这个仓库的人，谢谢你们的支持，后续我也会继续维护这个仓库，当`mpvue`有了一些新的特性或者一些新的语法的时候也会持续更新。如果各位大佬发现了什么问题欢迎`PR` 或者 `Issues`。
 
@@ -128,31 +131,7 @@ npm run dev
 
 ### 持续维护...
 
-## Contributors
-
-This project exists thanks to all the people who contribute. <img src="https://opencollective.com/mpvue-weui/contributors.svg?width=890&button=false" />
 
 
-## Backers
-
-Thank you to all our backers! 🙏 [[Become a backer](https://opencollective.com/mpvue-weui#backer)]
-
-<a href="https://opencollective.com/mpvue-weui#backers" target="_blank"><img src="https://opencollective.com/mpvue-weui/backers.svg?width=890"></a>
-
-
-## Sponsors
-
-Support this project by becoming a sponsor. Your logo will show up here with a link to your website. [[Become a sponsor](https://opencollective.com/mpvue-weui#sponsor)]
-
-<a href="https://opencollective.com/mpvue-weui/sponsor/0/website" target="_blank"><img src="https://opencollective.com/mpvue-weui/sponsor/0/avatar.svg"></a>
-<a href="https://opencollective.com/mpvue-weui/sponsor/1/website" target="_blank"><img src="https://opencollective.com/mpvue-weui/sponsor/1/avatar.svg"></a>
-<a href="https://opencollective.com/mpvue-weui/sponsor/2/website" target="_blank"><img src="https://opencollective.com/mpvue-weui/sponsor/2/avatar.svg"></a>
-<a href="https://opencollective.com/mpvue-weui/sponsor/3/website" target="_blank"><img src="https://opencollective.com/mpvue-weui/sponsor/3/avatar.svg"></a>
-<a href="https://opencollective.com/mpvue-weui/sponsor/4/website" target="_blank"><img src="https://opencollective.com/mpvue-weui/sponsor/4/avatar.svg"></a>
-<a href="https://opencollective.com/mpvue-weui/sponsor/5/website" target="_blank"><img src="https://opencollective.com/mpvue-weui/sponsor/5/avatar.svg"></a>
-<a href="https://opencollective.com/mpvue-weui/sponsor/6/website" target="_blank"><img src="https://opencollective.com/mpvue-weui/sponsor/6/avatar.svg"></a>
-<a href="https://opencollective.com/mpvue-weui/sponsor/7/website" target="_blank"><img src="https://opencollective.com/mpvue-weui/sponsor/7/avatar.svg"></a>
-<a href="https://opencollective.com/mpvue-weui/sponsor/8/website" target="_blank"><img src="https://opencollective.com/mpvue-weui/sponsor/8/avatar.svg"></a>
-<a href="https://opencollective.com/mpvue-weui/sponsor/9/website" target="_blank"><img src="https://opencollective.com/mpvue-weui/sponsor/9/avatar.svg"></a>
 
 
