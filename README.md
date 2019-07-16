@@ -138,5 +138,5 @@ Thank you to all the people who already contributed to mpvue-weui. <img src="htt
 
 
 
-## License
+### License
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FKuangPF%2Fmpvue-weui.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FKuangPF%2Fmpvue-weui?ref=badge_large)
