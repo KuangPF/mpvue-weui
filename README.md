@@ -3,6 +3,7 @@
 > 用 vue 写小程序，使用 mpvue 框架重写 WeUI。
 
 ![GitHub package version](https://img.shields.io/github/package-json/v/KuangPF/mpvue-weui.svg) ![Build](https://img.shields.io/circleci/project/github/KuangPF/mpvue-weui/master.svg) ![GitHub rep size](https://img.shields.io/github/languages/code-size/KuangPF/mpvue-weui.svg) ![license](https://img.shields.io/github/license/KuangPF/mpvue-weui.svg)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FKuangPF%2Fmpvue-weui.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FKuangPF%2Fmpvue-weui?ref=badge_shield)
 
 
 ### 相关说明
@@ -45,7 +46,6 @@ npm run dev
 ![mpvue-weui-demo02](https://github.com/KuangPF/mpvue-weui/blob/master/static/demo/mpvue-weui-demo02.png)
 ![mpvue-weui-demo03](https://github.com/KuangPF/mpvue-weui/blob/master/static/demo/mpvue-weui-demo03.png)
 ![mpvue-weui-demo01](https://github.com/KuangPF/mpvue-weui/blob/master/static/demo/mpvue-weui-demo04.png)
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FKuangPF%2Fmpvue-weui.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FKuangPF%2Fmpvue-weui?ref=badge_shield)
 
 ### 重写状态
 
