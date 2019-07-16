@@ -45,6 +45,7 @@ npm run dev
 ![mpvue-weui-demo02](https://github.com/KuangPF/mpvue-weui/blob/master/static/demo/mpvue-weui-demo02.png)
 ![mpvue-weui-demo03](https://github.com/KuangPF/mpvue-weui/blob/master/static/demo/mpvue-weui-demo03.png)
 ![mpvue-weui-demo01](https://github.com/KuangPF/mpvue-weui/blob/master/static/demo/mpvue-weui-demo04.png)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FKuangPF%2Fmpvue-weui.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FKuangPF%2Fmpvue-weui?ref=badge_shield)
 
 ### 重写状态
 
@@ -135,3 +136,7 @@ Thank you to all the people who already contributed to mpvue-weui. <img src="htt
 
 
 
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FKuangPF%2Fmpvue-weui.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FKuangPF%2Fmpvue-weui?ref=badge_large)
