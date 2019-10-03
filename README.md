@@ -130,13 +130,7 @@ Thank you to all the people who already contributed to mpvue-weui. <img src="htt
 
 文档是用 [docsify](https://github.com/QingWei-Li/docsify/)构建，所有文档文件在 `/docs` 目录下面，由于里面图片比较多而且还有`gif`，可能在`git clone`的时候会有一点点慢。
 
-### 持续维护...
-
-
-
-
-
-
-
 ### License
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FKuangPF%2Fmpvue-weui.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FKuangPF%2Fmpvue-weui?ref=badge_large)
+
+### 持续维护...
