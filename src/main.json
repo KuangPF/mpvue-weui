@@ -4,7 +4,7 @@
     "pages/button/main",
     "pages/list/main",
     "pages/slide-view/main",
-    "pages/input/main",  
+    "pages/input/main",
     "pages/slider/main",
     "pages/uploader/main",
 
@@ -32,19 +32,20 @@
     "pages/picker/main",
     "pages/mulLinkagePicker/main",
     "pages/toast/main",
+
     "pages/navbar/main",
+    "pages/navigation-bar/main",
     "pages/tabbar/main",
 
     "pages/searchbar/main",
 
     "pages/request/main",
     "pages/vuex/main",
-    "pages/vuexPage/main",
+    "pages/vuex-page/main",
     "pages/rate/main",
 
     "pages/test/main",
     "pages/componentsTest/main"
-
   ],
   "window": {
     "backgroundTextStyle": "light",

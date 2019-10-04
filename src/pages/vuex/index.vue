@@ -31,7 +31,7 @@ export default {
     }),
     turnToVuexPage() {
       wx.navigateTo({
-        url: '/pages/vuexPage/vuexPage'
+        url: '/pages/vuex-page/main'
       })
     },
     getMpvueInfo() {
