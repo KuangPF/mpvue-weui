@@ -17,27 +17,56 @@
                 <div class="weui-uploader__files" id="uploaderFiles">
                   <div v-for="(item ,index) in files" :key="index">
                     <div class="weui-uploader__file">
-                      <image class="weui-uploader__img" :src="item" mode="aspectFill" @click="predivImage" :id="item" />
+                      <image
+                        class="weui-uploader__img"
+                        :src="item"
+                        mode="aspectFill"
+                        @click="predivImage"
+                        :id="item"
+                      />
                       <div class="delete-icon" @click="deleteImg" :id="item"></div>
                     </div>
                   </div>
                   <div class="weui-uploader__file">
-                    <image class="weui-uploader__img" src="/static/images/pic_160.png" mode="aspectFill" />
+                    <image
+                      class="weui-uploader__img"
+                      src="/static/images/pic_160.png"
+                      mode="aspectFill"
+                    />
                   </div>
                   <div class="weui-uploader__file">
-                    <image class="weui-uploader__img" src="/static/images/pic_160.png" mode="aspectFill" />
-                  </div>
-                  <div class="weui-uploader__file">
-                    <image class="weui-uploader__img" src="/static/images/pic_160.png" mode="aspectFill" />
+                    <image
+                      class="weui-uploader__img"
+                      src="/static/images/pic_160.png"
+                      mode="aspectFill"
+                    />
                   </div>
                   <div class="weui-uploader__file weui-uploader__file_status">
-                    <image class="weui-uploader__img" src="/static/images/pic_160.png" mode="aspectFill" />
+                    <image
+                      class="weui-uploader__img"
+                      src="/static/images/pic_160.png"
+                      mode="aspectFill"
+                    />
+                    <view class="weui-uploader__file-content">
+                      <view class="weui-loading"></view>
+                    </view>
+                  </div>
+                  <div class="weui-uploader__file weui-uploader__file_status">
+                    <image
+                      class="weui-uploader__img"
+                      src="/static/images/pic_160.png"
+                      mode="aspectFill"
+                    />
                     <div class="weui-uploader__file-content">
                       <icon type="warn" size="23" color="#F43530"></icon>
                     </div>
                   </div>
                   <div class="weui-uploader__file weui-uploader__file_status">
-                    <image class="weui-uploader__img" src="../../../static/images/pic_160.png" mode="aspectFill" />
+                    <image
+                      class="weui-uploader__img"
+                      src="/static/images/pic_160.png"
+                      mode="aspectFill"
+                    />
                     <div class="weui-uploader__file-content">50%</div>
                   </div>
                 </div>
@@ -67,15 +96,15 @@ export default {
         count: 1, // 默认9
         sizeType: ['original', 'compressed'], // 可以指定是原图还是压缩图，默认二者都有
         sourceType: ['album', 'camera'], // 可以指定来源是相册还是相机，默认二者都有
-        success: function(res) {
+        success: function (res) {
           console.log('成功上传：' + res.tempFilePaths);
           // 返回选定照片的本地文件路径列表，tempFilePath可以作为img标签的src属性显示图片
           _this.files = _this.files.concat(res.tempFilePaths);
         },
-        fail: function() {
+        fail: function () {
           console.log('fail');
         },
-        complete: function() {
+        complete: function () {
           console.log('commplete');
         }
       });
@@ -88,13 +117,13 @@ export default {
       });
     },
     deleteImg(e) {
-      Array.prototype.indexOf = function(val) { // eslint-disable-line
+      Array.prototype.indexOf = function (val) { // eslint-disable-line
         for (let i = 0; i < this.length; i++) {
           if (this[i] === val) return i;
         }
         return -1;
       };
-      Array.prototype.remove = function(val) { // eslint-disable-line
+      Array.prototype.remove = function (val) { // eslint-disable-line
         let index = this.indexOf(val);
         if (index > -1) {
           this.splice(index, 1);
@@ -124,7 +153,7 @@ export default {
   z-index: 5;
 }
 .delete-icon::before {
-  content: '';
+  content: "";
   width: 26rpx;
   height: 4rpx;
   position: absolute;
