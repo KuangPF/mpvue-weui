@@ -60,6 +60,7 @@ export default {
             'gallery',
             'grid',
             'icons',
+            'loading',
             'loadmore',
             'panel',
             'preview',

@@ -69,9 +69,9 @@ export default {
   margin: 5px;
   padding: 0 10px;
   text-align: center;
-  background-color: #ebebeb;
+  background-color: #f7f7f7;
   height: 2.3em;
   line-height: 2.3em;
-  color: #cfcfcf;
+  color: rgba(0, 0, 0, 0.3);
 }
 </style>
