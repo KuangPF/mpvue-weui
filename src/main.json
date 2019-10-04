@@ -3,6 +3,7 @@
     "pages/index/main",
     "pages/button/main",
     "pages/list/main",
+    "pages/slide-view/main",
     "pages/input/main",  
     "pages/slider/main",
     "pages/uploader/main",
