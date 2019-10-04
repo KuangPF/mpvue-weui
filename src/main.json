@@ -47,5 +47,6 @@
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "weui for mpvue",
     "navigationBarTextStyle": "black"
-  }
+  },
+  "style": "v2"
 }
