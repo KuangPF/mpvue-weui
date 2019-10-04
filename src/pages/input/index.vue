@@ -10,7 +10,11 @@
       <div class="weui-cells__title">单选列表项</div>
       <div class="weui-cells weui-cells_after-title">
         <radio-group @change="radioChange">
-          <label class="weui-cell weui-check__label" v-for="(item,index) in radioItems" :key="index">
+          <label
+            class="weui-cell weui-check__label"
+            v-for="(item,index) in radioItems"
+            :key="index"
+          >
             <radio class="weui-check" :value="item.value" :checked="item.checked" />
             <div class="weui-cell__bd">{{item.name}}</div>
             <div class="weui-cell__ft weui-cell__ft_in-radio" v-if="item.checked">
@@ -26,15 +30,19 @@
       <div class="weui-cells__title">复选列表项</div>
       <div class="weui-cells weui-cells_after-title">
         <checkbox-group @change="checkboxChange">
-      <label class="weui-cell weui-check__label" v-for="(item,index) in checkboxItems" :key="index">
-        <checkbox class="weui-check" :value="item.value" :checked="item.checked" />
-        <div class="weui-cell__hd weui-check__hd_in-checkbox">
-          <icon class="weui-icon-checkbox_circle" type="circle" size="23" v-if="!item.checked"></icon>
-          <icon class="weui-icon-checkbox_success" type="success" size="23" v-if="item.checked"></icon>
-        </div>
-        <div class="weui-cell__bd">{{item.name}}</div>
-      </label>
-    </checkbox-group>
+          <label
+            class="weui-cell weui-check__label"
+            v-for="(item,index) in checkboxItems"
+            :key="index"
+          >
+            <checkbox class="weui-check" :value="item.value" :checked="item.checked" />
+            <div class="weui-cell__hd weui-check__hd_in-checkbox">
+              <icon class="weui-icon-checkbox_circle" type="circle" size="23" v-if="!item.checked"></icon>
+              <icon class="weui-icon-checkbox_success" type="success" size="23" v-if="item.checked"></icon>
+            </div>
+            <div class="weui-cell__bd">{{item.name}}</div>
+          </label>
+        </checkbox-group>
         <div class="weui-cell weui-cell_link">
           <div class="weui-cell__bd">添加更多</div>
         </div>
@@ -42,7 +50,7 @@
 
       <div class="weui-cells__title">表单</div>
       <div class="weui-cells weui-cells_after-title">
-        <div class="weui-cell weui-cell_input">
+        <div class="weui-cell">
           <div class="weui-cell__hd">
             <div class="weui-label">qq</div>
           </div>
@@ -50,7 +58,7 @@
             <input class="weui-input" placeholder="请输入qq" />
           </div>
         </div>
-        <div class="weui-cell weui-cell_input weui-cell_vcode">
+        <div class="weui-cell weui-cell_vcode">
           <div class="weui-cell__hd">
             <div class="weui-label">手机号</div>
           </div>
@@ -61,17 +69,23 @@
             <div class="weui-vcode-btn">获取验证码</div>
           </div>
         </div>
-        <div class="weui-cell weui-cell_input">
+        <div class="weui-cell">
           <div class="weui-cell__hd">
             <div class="weui-label">日期</div>
           </div>
           <div class="weui-cell__bd">
-            <picker mode="date" value="date" start="2015-09-01" end="2017-09-01" @change="bindDateChange">
+            <picker
+              mode="date"
+              value="date"
+              start="2015-09-01"
+              end="2017-09-01"
+              @change="bindDateChange"
+            >
               <div class="weui-input">{{date}}</div>
             </picker>
           </div>
         </div>
-        <div class="weui-cell weui-cell_input">
+        <div class="weui-cell">
           <div class="weui-cell__hd">
             <div class="weui-label">时间</div>
           </div>
@@ -81,7 +95,7 @@
             </picker>
           </div>
         </div>
-        <div class="weui-cell weui-cell_input weui-cell_vcode">
+        <div class="weui-cell weui-cell_vcode">
           <div class="weui-cell__hd">
             <div class="weui-label">验证码</div>
           </div>
@@ -98,7 +112,7 @@
 
       <div class="weui-cells__title">表单报错</div>
       <div class="weui-cells weui-cells_after-title">
-        <div class="weui-cell weui-cell_input weui-cell_warn">
+        <div class="weui-cell weui-cell_warn">
           <div class="weui-cell__hd">
             <div class="weui-label">卡号</div>
           </div>
@@ -116,14 +130,14 @@
         <div class="weui-cell weui-cell_switch">
           <div class="weui-cell__bd">标题文字</div>
           <div class="weui-cell__ft">
-            <switch checked @change = "switchChange"/>
+            <switch checked @change="switchChange" />
           </div>
         </div>
       </div>
 
       <div class="weui-cells__title">文本框</div>
       <div class="weui-cells weui-cells_after-title">
-        <div class="weui-cell weui-cell_input">
+        <div class="weui-cell">
           <div class="weui-cell__bd">
             <input class="weui-input" placeholder="请输入文本" />
           </div>
@@ -134,7 +148,7 @@
       <div class="weui-cells weui-cells_after-title">
         <div class="weui-cell">
           <div class="weui-cell__bd">
-            <textarea class="" placeholder="请输入文本" style="height: 3.3em" />
+            <textarea class placeholder="请输入文本" style="height: 3.3em" />
             <div class="weui-textarea-counter">0/200</div>
           </div>
         </div>
@@ -180,10 +194,14 @@
           <div class="weui-agree__text">
             <checkbox class="weui-agree__checkbox" id="weuiAgree" value="agree" checked="isAgree" />
             <div class="weui-agree__checkbox-icon">
-              <icon class="weui-agree__checkbox-icon-check" type="success_no_circle" size="9" v-if="isAgree"></icon>
-            </div>
-            阅读并同意
-            <navigator url="" class="weui-agree__link">《相关条款》</navigator>
+              <icon
+                class="weui-agree__checkbox-icon-check"
+                type="success_no_circle"
+                size="9"
+                v-if="isAgree"
+              ></icon>
+            </div>阅读并同意
+            <navigator url class="weui-agree__link">《相关条款》</navigator>
           </div>
         </label>
       </checkbox-group>
@@ -247,7 +265,7 @@ export default {
       this.radioItems = radioItems;
     },
     switchChange(e) {
-      console.log("switch发生change事件，携带value值为："+ e.mp.detail.value);
+      console.log("switch发生change事件，携带value值为：" + e.mp.detail.value);
     },
     bindDateChange(e) {
       this.date = e.mp.detail.value;
@@ -281,5 +299,4 @@ export default {
 </script>
 
 <style>
-
 </style>
