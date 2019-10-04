@@ -8,6 +8,8 @@
       <div class="weui-btn-area">
         <button class="weui-btn" type="default" @click="openSuccess">成功提示页</button>
         <button class="weui-btn" type="default" @click="openFail">失败提示页</button>
+        <button class="weui-btn" type="default" @click="openText">无图标提示页</button>
+        <button class="weui-btn" type="default" @click="openTextPrimary">无图标提示页</button>
       </div>
     </div>
   </div>
@@ -30,11 +32,27 @@ export default {
       wx.navigateTo({
         url: '../msg-fail/main'
       })
+    },
+    openText() {
+      wx.navigateTo({
+        url: '../msg-text/main'
+      })
+    },
+    openTextPrimary: function () {
+      wx.navigateTo({
+        url: '../msg-text-primary/main'
+      })
     }
   }
 }
 </script>
 
 <style>
-
+page {
+  background-color: #ffffff;
+}
+page,
+.page {
+  height: 100%;
+}
 </style>

@@ -27,6 +27,8 @@
     "pages/msg/main",
     "pages/msg-fail/main",
     "pages/msg-success/main",
+    "pages/msg-text/main",
+    "pages/msg-text-primary/main",
     "pages/picker/main",
     "pages/mulLinkagePicker/main",
     "pages/toast/main",

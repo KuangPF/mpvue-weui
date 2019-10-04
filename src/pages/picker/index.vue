@@ -6,7 +6,7 @@
     </div>
     <div class="page__bd">
       <div class="weui-btn-area">
-        <picker @change="bindPickerChange" :value="index" :range="array">
+        <picker class="weui-btn" @change="bindPickerChange" :value="index" :range="array">
           <button type="default">单列选择器</button>
         </picker>
         <picker class="weui-btn" mode="multiSelector" @change="MultiPickerChange" :value="indexMulPicker" :range="multiArray" @columnchange="MultiPickerColumChange">
