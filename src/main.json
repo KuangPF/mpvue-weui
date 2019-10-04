@@ -3,7 +3,8 @@
     "pages/index/main",
     "pages/button/main",
     "pages/list/main",
-    "pages/input/main",  
+    "pages/slide-view/main",
+    "pages/input/main",
     "pages/slider/main",
     "pages/uploader/main",
 
@@ -14,6 +15,7 @@
     "pages/gallery/main",
     "pages/grid/main",
     "pages/icons/main",
+    "pages/loading/main",
     "pages/loadmore/main",
     "pages/panel/main",
     "pages/preview/main",
@@ -22,30 +24,35 @@
 
     "pages/actionsheet/main",
     "pages/dialog/main",
+    "pages/half-screen-dialog/main",
     "pages/msg/main",
     "pages/msg-fail/main",
     "pages/msg-success/main",
+    "pages/msg-text/main",
+    "pages/msg-text-primary/main",
     "pages/picker/main",
     "pages/mulLinkagePicker/main",
     "pages/toast/main",
+
     "pages/navbar/main",
+    "pages/navigation-bar/main",
     "pages/tabbar/main",
 
     "pages/searchbar/main",
 
     "pages/request/main",
     "pages/vuex/main",
-    "pages/vuexPage/main",
+    "pages/vuex-page/main",
     "pages/rate/main",
 
     "pages/test/main",
     "pages/componentsTest/main"
-
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#ededed",
     "navigationBarTitleText": "weui for mpvue",
     "navigationBarTextStyle": "black"
-  }
+  },
+  "style": "v2"
 }

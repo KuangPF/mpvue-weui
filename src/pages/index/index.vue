@@ -8,18 +8,26 @@
       <div class="kind-list">
         <div v-for="(item1,index1) in list" :key="index1">
           <div class="kind-list__item">
-            <div :id=item1.id :class="{'kind-list__item-hd_show':item1.open}" class="weui-flex,kind-list__item-hd" @click="kindToggle">
+            <div
+              :id="item1.id"
+              :class="{'kind-list__item-hd_show':item1.open}"
+              class="weui-flex,kind-list__item-hd"
+              @click="kindToggle"
+            >
               <div class="weui-flex__item">{{item1.name}}</div>
-              <img class="kind-list__img" :src=" '/static/images/icon_nav_'+item1.id+'.png'">
+              <img class="kind-list__img" :src=" '/static/images/icon_nav_'+item1.id+'.png'" />
             </div>
             <div :class="{'kind-list__item-bd_show':item1.open}" class="kind-list__item-bd">
               <div :class="{'weui-cells_show':item1.open}" class="weui-cells">
-                <div v-for="(item2,index2) in item1.pages" :key="index2">
-                  <navigator class="weui-cell weui-cell_access" :url=" '/pages/'+item2+'/'+'main'+ ''">
-                    <div class="weui-cell__bd">{{item2}}</div>
-                    <div class="weui-cell__ft weui-cell__ft_in-access"></div>
-                  </navigator>
-                </div>
+                <navigator
+                  v-for="(item2,index2) in item1.pages"
+                  :key="index2"
+                  class="weui-cell weui-cell_access"
+                  :url=" '/pages/'+item2+'/'+'main'+ ''"
+                >
+                  <div class="weui-cell__bd">{{item2}}</div>
+                  <div class="weui-cell__ft weui-cell__ft_in-access"></div>
+                </navigator>
               </div>
             </div>
           </div>
@@ -38,7 +46,7 @@ export default {
           id: 'form',
           name: '表单',
           open: false,
-          pages: ['button', 'list', 'input', 'slider', 'uploader']
+          pages: ['button', 'list', 'slide-view', 'input', 'slider', 'uploader']
         },
         {
           id: 'widget',
@@ -52,6 +60,7 @@ export default {
             'gallery',
             'grid',
             'icons',
+            'loading',
             'loadmore',
             'panel',
             'preview',
@@ -63,13 +72,13 @@ export default {
           id: 'feedback',
           name: '操作反馈',
           open: false,
-          pages: ['actionsheet', 'dialog', 'msg', 'picker', 'toast']
+          pages: ['actionsheet', 'dialog', 'half-screen-dialog', 'msg', 'picker', 'toast']
         },
         {
           id: 'nav',
           name: '导航相关',
           open: false,
-          pages: ['navbar', 'tabbar']
+          pages: ['navbar', 'navigation-bar', 'tabbar']
         },
         {
           id: 'search',
@@ -111,7 +120,7 @@ export default {
 <style scoped>
 /*!
  * WeUI v1.1.1 (https://github.com/weui/weui-wxss)
- * Copyright 2017 Tencent, Inc.
+ * Copyright 2019 Tencent, Inc.
  * Licensed under the MIT license
  */
 

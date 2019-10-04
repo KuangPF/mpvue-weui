@@ -6,8 +6,30 @@
     </div>
     <div class="page__bd">
       <div class="weui-btn-area">
-        <button class="weui-btn" type="default" @click="openConfirm">Confirm Dialog</button>
-        <button class="weui-btn" type="default" @click="openAlert">Alert Dialog</button>
+        <button class="weui-btn" type="default" @click="openConfirm">原生 Dialog</button>
+        <button class="weui-btn" type="default" @click="openDialog">模拟 Dialog</button>
+      </div>
+      <div :class="['weui-demo-dialog', istrue ? 'weui-demo-dialog_show' : '']">
+        <div class="weui-mask" @click="closeDialog"></div>
+        <div class="weui-dialog__wrp" @click="closeDialog">
+          <div class="weui-dialog" catchtouchmove>
+            <div class="weui-dialog__hd">
+              <div class="weui-dialog__title">标题</div>
+            </div>
+            <div class="weui-dialog__bd">
+              <image
+                class="weui-article__img"
+                src="/static/images/pic_article.png"
+                mode="aspectFill"
+                style="max-width:100%;"
+              />
+            </div>
+            <div class="weui-dialog__ft">
+              <div class="weui-dialog__btn weui-dialog__btn_default" @click="closeDialog">取消</div>
+              <div class="weui-dialog__btn" @click="closeDialog">确定</div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -17,7 +39,7 @@
 export default {
   data() {
     return {
-
+      istrue: false
     }
   },
   methods: {
@@ -37,21 +59,27 @@ export default {
         }
       });
     },
-    openAlert() {
-      wx.showModal({
-        content: '弹窗内容，告知当前状态、信息和解决方法，描述文字尽量控制在三行内',
-        showCancel: false,
-        success: function (res) {
-          if (res.confirm) {
-            console.log('用户点击确定')
-          }
-        }
-      });
+    openDialog() {
+      this.istrue = true
+    },
+    closeDialog() {
+      this.istrue = false
     }
   }
 }
 </script>
 
-<style>
-
+<style scoped>
+page {
+  background-color: #ffffff;
+}
+.weui-demo-dialog {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.weui-demo-dialog_show {
+  visibility: visible;
+  opacity: 1;
+}
 </style>

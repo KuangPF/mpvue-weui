@@ -1,12 +1,12 @@
 <template>
   <div class="page">
     <div class="weui-msg">
-      <div class="weui-msg__icon-area">
-        <icon type="success" size="64"></icon>
-      </div>
       <div class="weui-msg__text-area">
-        <div class="weui-msg__title">操作成功</div>
         <div class="weui-msg__desc">
+          内容详情，可根据实际需要安排，如果换行则不超过规定长度，居中展现
+          <navigator url class="weui-msg__link">文字链接</navigator>
+        </div>
+        <div class="weui-msg__desc-primary">
           内容详情，可根据实际需要安排，如果换行则不超过规定长度，居中展现
           <navigator url class="weui-msg__link">文字链接</navigator>
         </div>
@@ -20,14 +20,6 @@
         <div class="weui-msg__tips">
           内容详情，可根据实际需要安排，如果换行则不超过规定长度，居中展现
           <navigator url class="weui-msg__link">文字链接</navigator>
-        </div>
-      </div>
-      <div class="weui-msg__extra-area">
-        <div class="weui-footer">
-          <div class="weui-footer__links">
-            <navigator url class="weui-footer__link">底部链接文本</navigator>
-          </div>
-          <div class="weui-footer__text">Copyright © 2008-2016 weui.io</div>
         </div>
       </div>
     </div>

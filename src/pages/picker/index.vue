@@ -6,16 +6,37 @@
     </div>
     <div class="page__bd">
       <div class="weui-btn-area">
-        <picker @change="bindPickerChange" :value="index" :range="array">
+        <picker class="weui-btn" @change="bindPickerChange" :value="index" :range="array">
           <button type="default">单列选择器</button>
         </picker>
-        <picker class="weui-btn" mode="multiSelector" @change="MultiPickerChange" :value="indexMulPicker" :range="multiArray" @columnchange="MultiPickerColumChange">
+        <picker
+          class="weui-btn"
+          mode="multiSelector"
+          @change="MultiPickerChange"
+          :value="indexMulPicker"
+          :range="multiArray"
+          @columnchange="MultiPickerColumChange"
+        >
           <button type="default">多列选择器</button>
         </picker>
-        <picker class="weui-btn" mode="time" :value="time" start="09:01" end="21:01" @change="bindTimeChange">
+        <picker
+          class="weui-btn"
+          mode="time"
+          :value="time"
+          start="09:01"
+          end="21:01"
+          @change="bindTimeChange"
+        >
           <button type="default">时间选择器</button>
         </picker>
-        <picker class="weui-btn" mode="date" :value="date" start="2015-09-01" end="2017-09-01" @change="bindDateChange">
+        <picker
+          class="weui-btn"
+          mode="date"
+          :value="date"
+          start="2015-09-01"
+          end="2017-09-01"
+          @change="bindDateChange"
+        >
           <button type="default">日期选择器</button>
         </picker>
         <picker class="weui-btn" mode="region" :value="region" @change="CityChange">
@@ -31,7 +52,7 @@
 export default {
   data() {
     return {
-      array: ['美国', '中国', '巴西', '日本'],
+      array: ['中国', '美国', '巴西', '日本'],
       index: 0,
       date: '2016-09-01',
       time: '12:01',
@@ -69,5 +90,4 @@ export default {
 </script>
 
 <style>
-
 </style>
