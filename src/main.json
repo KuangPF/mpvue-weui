@@ -24,6 +24,7 @@
 
     "pages/actionsheet/main",
     "pages/dialog/main",
+    "pages/half-screen-dialog/main",
     "pages/msg/main",
     "pages/msg-fail/main",
     "pages/msg-success/main",
@@ -49,7 +50,7 @@
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#ededed",
     "navigationBarTitleText": "weui for mpvue",
     "navigationBarTextStyle": "black"
   },
