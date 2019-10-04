@@ -11,7 +11,7 @@
           <div class="weui-navigation-bar__left">
             <div class="weui-navigation-bar__buttons">
               <div
-                bindtap="back"
+                @click="back"
                 class="weui-navigation-bar__button weui-navigation-bar__btn_goback"
               ></div>
             </div>
@@ -33,7 +33,11 @@
 
 <script>
 export default {
-
+  methods: {
+    back() {
+      wx.navigateBack()
+    }
+  }
 }
 </script>
 

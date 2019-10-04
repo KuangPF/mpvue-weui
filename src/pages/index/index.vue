@@ -19,15 +19,15 @@
             </div>
             <div :class="{'kind-list__item-bd_show':item1.open}" class="kind-list__item-bd">
               <div :class="{'weui-cells_show':item1.open}" class="weui-cells">
-                <div v-for="(item2,index2) in item1.pages" :key="index2">
-                  <navigator
-                    class="weui-cell weui-cell_access"
-                    :url=" '/pages/'+item2+'/'+'main'+ ''"
-                  >
-                    <div class="weui-cell__bd">{{item2}}</div>
-                    <div class="weui-cell__ft weui-cell__ft_in-access"></div>
-                  </navigator>
-                </div>
+                <navigator
+                  v-for="(item2,index2) in item1.pages"
+                  :key="index2"
+                  class="weui-cell weui-cell_access"
+                  :url=" '/pages/'+item2+'/'+'main'+ ''"
+                >
+                  <div class="weui-cell__bd">{{item2}}</div>
+                  <div class="weui-cell__ft weui-cell__ft_in-access"></div>
+                </navigator>
               </div>
             </div>
           </div>
@@ -120,7 +120,7 @@ export default {
 <style scoped>
 /*!
  * WeUI v1.1.1 (https://github.com/weui/weui-wxss)
- * Copyright 2017 Tencent, Inc.
+ * Copyright 2019 Tencent, Inc.
  * Licensed under the MIT license
  */
 
