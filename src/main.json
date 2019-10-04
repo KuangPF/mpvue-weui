@@ -15,6 +15,7 @@
     "pages/gallery/main",
     "pages/grid/main",
     "pages/icons/main",
+    "pages/loading/main",
     "pages/loadmore/main",
     "pages/panel/main",
     "pages/preview/main",
