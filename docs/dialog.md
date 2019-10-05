@@ -1,25 +1,53 @@
 # Dialog
 弹框
 
-`Dialog`，也叫 “modal”，表现为带遮罩的弹框。可以分为 `Alert` 和 `Confirm` 两种。
+`Dialog`，也叫 “modal”，表现为带遮罩的弹框。
 
-实现这个功能调用微信 API `wx.showModal()` 即可，然后设置不同的参数就可以实现`Alert` 或者 `Confirm`，示例代码如下：
+可调用微信 API `wx.showModal()` 实现原生 modal，或者模拟 Dialog，示例代码如下：
 
 ``` vue
 <template>
   <div class="page">
-    <div class="weui-btn-area">
-      <button class="weui-btn" type="default" @click="openConfirm">Confirm Dialog</button>
-      <button class="weui-btn" type="default" @click="openAlert">Alert Dialog</button>
+    <div class="page__hd">
+      <div class="page__title">Dialog</div>
+      <div class="page__desc">对话框，采用小程序原生的modal</div>
+    </div>
+    <div class="page__bd">
+      <div class="weui-btn-area">
+        <button class="weui-btn" type="default" @click="openConfirm">原生 Dialog</button>
+        <button class="weui-btn" type="default" @click="openDialog">模拟 Dialog</button>
+      </div>
+      <div :class="['weui-demo-dialog', istrue ? 'weui-demo-dialog_show' : '']">
+        <div class="weui-mask" @click="closeDialog"></div>
+        <div class="weui-dialog__wrp" @click="closeDialog">
+          <div class="weui-dialog" catchtouchmove>
+            <div class="weui-dialog__hd">
+              <div class="weui-dialog__title">标题</div>
+            </div>
+            <div class="weui-dialog__bd">
+              <image
+                class="weui-article__img"
+                src="/static/images/pic_article.png"
+                mode="aspectFill"
+                style="max-width:100%;"
+              />
+            </div>
+            <div class="weui-dialog__ft">
+              <div class="weui-dialog__btn weui-dialog__btn_default" @click="closeDialog">取消</div>
+              <div class="weui-dialog__btn" @click="closeDialog">确定</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-import base64 from '../../../static/images/base64';
 export default {
   data() {
     return {
+      istrue: false
     }
   },
   methods: {
@@ -39,32 +67,33 @@ export default {
         }
       });
     },
-    openAlert() {
-      wx.showModal({
-        content: '弹窗内容，告知当前状态、信息和解决方法，描述文字尽量控制在三行内',
-        showCancel: false,
-        success: function (res) {
-          if (res.confirm) {
-            console.log('用户点击确定')
-          }
-        }
-      });
+    openDialog() {
+      this.istrue = true
+    },
+    closeDialog() {
+      this.istrue = false
     }
   }
 }
 </script>
 
-<style>
+<style scoped>
 page {
-  margin-top: 50px;
-  padding: 15px;
-  box-sizing: border-box;
+  background-color: #ffffff;
+}
+.weui-demo-dialog {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.weui-demo-dialog_show {
+  visibility: visible;
+  opacity: 1;
 }
 </style>
-
 
 ```
 
 **效果**
 
-![dialog01](_img/dialog01.gif)
+<img src='_img/dialog01.gif' width=350> 

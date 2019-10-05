@@ -43,6 +43,6 @@ event.detail = {value: value}
  ```
  从中可以很明显地看出区别，因此要避免踩的坑：
 
-!> 在触发事件后如果要获取对应的值，需要写成这样: `e.detail.value`
+!> 在触发事件后如果要获取对应的值，需要写成这样: `e.mp.detail.value`
 
 

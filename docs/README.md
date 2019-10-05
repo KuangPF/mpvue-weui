@@ -16,7 +16,7 @@
 
 ## 该文档的目的
 
-其实 `mpvue` 框架对小程序的原生组件支持地非常好，但对于一些新人来说，比如我，在开始接触`mpvue` 的时候由于不太了解。就造成了对于在小程序中的一些方法不知在 `mpvue` 如何实现。举一个简单的例子：小程序 `picker`组件有一个`bindchange`属性，刚开始时我完全将这个属性移植到了 `mpvue`中，发现并不能用，waht，这岂不是很尴尬。然后就问了一下大佬[anchengjian](https://github.com/anchengjian),得知在 `mpvue` 框架下要写成 `@change`,这样问题就解决了。因此这篇文档的主要作用就是将自己踩的一些坑记录下来，然后再说下在 `mpvue` 框架下如何使用 `WeUI`。
+其实 `mpvue` 框架对小程序的原生组件支持地非常好，但对于一些新人来说，比如我，在开始接触`mpvue` 的时候由于不太了解。就造成了对于在小程序中的一些方法不知在 `mpvue` 如何实现。举一个简单的例子：小程序 `picker`组件有一个`bindchange`属性，刚开始时我完全将这个属性移植到了 `mpvue`中，发现并不能用，然后就问了一下大佬[anchengjian](https://github.com/anchengjian)，得知在 `mpvue` 框架下要写成 `@change`,这样问题就解决了。因此这篇文档的主要作用就是将自己踩的一些坑记录下来，然后说下在 `mpvue` 框架下如何使用 `WeUI`。
 
 
 ## 开发预览
@@ -37,9 +37,7 @@ npm run dev
 ```
 ## 效果
 
-![mpvue-weui-demo01](_img/mpvue-weui-demo01.png)
-![mpvue-weui-demo02](_img/mpvue-weui-demo02.png)
-![mpvue-weui-demo03](_img/mpvue-weui-demo03.png)
-![mpvue-weui-demo01](_img/mpvue-weui-demo04.png)
+<img width="350" alt="mpvue-weui-demo01" src="https://user-images.githubusercontent.com/20694238/66197896-e23f6380-e6cd-11e9-99bc-b120bbc81cee.png"> <img width="350" alt="mpvue-weui-demo02" src="https://user-images.githubusercontent.com/20694238/66197895-e1a6cd00-e6cd-11e9-8c82-d3974c1cc0ce.png">
 
+<img width="350" alt="mpvue-weui-demo03" src="https://user-images.githubusercontent.com/20694238/66197894-e10e3680-e6cd-11e9-8db4-f167abe07efc.png"> <img width="350" alt="mpvue-weui-demo04" src="https://user-images.githubusercontent.com/20694238/66197893-e10e3680-e6cd-11e9-9391-0962a9c84389.png">
 

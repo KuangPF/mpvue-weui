@@ -12,6 +12,7 @@
 
   * [button](button.md)
   * [list](list.md)
+  * [slideview](slide-view.md)
   * [input](input.md)
   * [slider](slider.md)
   * [uploader](uploader.md)
@@ -24,6 +25,7 @@
   * [gallery](gallery.md)
   * [grid](grid.md)
   * [icons](icons.md)
+  * [loading](loading.md)
   * [loadermore](loadmore.md)
   * [panel](panel.md)
   * [preview](preview.md)
@@ -33,12 +35,14 @@
 * 操作反馈
   * [actionsheet](action-sheet.md)
   * [dialog](dialog.md)
+  * [half-screen-dialog](half-screen-dialog.md)
   * [msg](msg.md)
   * [picker](picker.md)
   * [toast](toast.md)
 
 * 导航相关
   * [navbar](navbar.md)
+  * [navigation-bar](navigation-bar.md)
   * [tabbar](tabbar.md)
 
 * 搜索相关
