@@ -1,6 +1,6 @@
 {
   "name": "mpvue-weui",
-  "version": "1.0.6",
+  "version": "2.0.0",
   "description": "用 vue 写小程序，使用 mpvue 框架重写 WeUI。",
   "author": "kuangpengfei <kuangpf1995@gmail.com>",
   "private": false,
@@ -8,9 +8,11 @@
     "dev": "node build/dev-server.js",
     "start": "node build/dev-server.js",
     "build": "node build/build.js",
+    "docs": "docsify serve docs",
     "lint": "eslint --ext .js,.vue src"
   },
   "dependencies": {
+    "docsify-cli": "^4.3.0",
     "flyio": "^0.5.4",
     "mpvue": "2.0.5",
     "vuex": "^2.3.1"
